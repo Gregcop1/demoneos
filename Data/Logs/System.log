@@ -1,0 +1,127 @@
+14-12-09 16:10:49 29242      NOTICE    Flow                 Locking site. Lock file: /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Flow.lock
+14-12-09 16:10:50 29242      INFO      Flow                 Aspect classes have been modified, flushing the whole proxy classes cache.
+14-12-09 16:10:50 29242      INFO      Flow                 Domain model changes have been detected, triggering Doctrine 2 proxy rebuilding.
+14-12-09 16:10:50 29242      INFO      Flow                 File Monitor "Flow_ClassFiles" detected 2239 changed files and 30 changed directories.
+14-12-09 16:10:50 29242      INFO      Flow                 A configuration file matching the pattern "/Policy\.yaml/" has been changed, flushing related cache "Flow_Security_Policy"
+14-12-09 16:10:50 29242      INFO      Flow                 A configuration file matching the pattern "/Views\.yaml/" has been changed, flushing related cache "Flow_Mvc_ViewConfigurations"
+14-12-09 16:10:50 29242      INFO      Flow                 A configuration file matching the pattern "/Routes([^\/]*)\.yaml/" has been changed, flushing related cache "Flow_Mvc_Routing_FindMatchResults"
+14-12-09 16:10:50 29242      INFO      Flow                 A configuration file matching the pattern "/Routes([^\/]*)\.yaml/" has been changed, flushing related cache "Flow_Mvc_Routing_Resolve"
+14-12-09 16:10:50 29242      INFO      Flow                 The configuration has changed, triggering an AOP proxy class rebuild.
+14-12-09 16:10:50 29242      INFO      Flow                 File Monitor "Flow_ConfigurationFiles" detected 70 changed files and 14 changed directories.
+14-12-09 16:10:50 29242      INFO      Flow                 The localization files have changed, thus flushing the I18n XML model cache.
+14-12-09 16:10:50 29242      INFO      Flow                 File Monitor "Flow_TranslationFiles" detected 10 changed files and 3 changed directories.
+14-12-09 16:11:11 29242      INFO      Flow                 Reflected 1034 emerged classes.
+14-12-09 16:11:13 29242      INFO      Flow                 Aspects have been modified, therefore rebuilding all target classes.
+14-12-09 16:11:13 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Flow\Mvc\Controller\StandardController->indexAction
+14-12-09 16:11:13 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Flow\Mvc\Controller\StandardController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Fluid\ViewHelpers\Widget\Controller\AutocompleteController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Fluid\ViewHelpers\Widget\Controller\AutocompleteController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Fluid\ViewHelpers\Widget\Controller\PaginateController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Fluid\ViewHelpers\Widget\Controller\PaginateController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Media\Controller\AssetController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Media\Controller\AssetController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\BackendController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\BackendController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\ImageBrowserController->indexAction
+14-12-09 16:11:14 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\ImageBrowserController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\MediaBrowserController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\MediaBrowserController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\MenuController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\MenuController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\ModuleController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Backend\ModuleController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\LoginController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\LoginController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\AbstractModuleController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\AbstractModuleController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\AdministrationController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\AdministrationController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Administration\PackagesController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Administration\PackagesController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Administration\SitesController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Administration\SitesController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Administration\UsersController->indexAction
+14-12-09 16:11:15 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Administration\UsersController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\ManagementController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\ManagementController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Management\AssetController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\Management\AssetController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\UserController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\UserController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\User\UserSettingsController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Module\User\UserSettingsController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Service\NodeController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Controller\Service\NodeController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Service\Controller\AssetController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Service\Controller\AssetController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Service\Controller\UserPreferenceController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Neos\Service\Controller\UserPreferenceController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Setup\Controller\SetupController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Setup\Controller\SetupController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Setup\ViewHelpers\Widget\Controller\DatabaseSelectorController->indexAction
+14-12-09 16:11:16 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\Setup\ViewHelpers\Widget\Controller\DatabaseSelectorController->indexAction
+14-12-09 16:11:17 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\TYPO3CR\ViewHelpers\Widget\Controller\PaginateController->indexAction
+14-12-09 16:11:17 29242      NOTICE    Flow                 The argument "workspace" declared in pointcut does not exist in method TYPO3\TYPO3CR\ViewHelpers\Widget\Controller\PaginateController->indexAction
+14-12-09 16:11:21 29242      INFO      Flow                 Built and froze reflection runtime caches (1065 classes).
+14-12-09 16:11:21 29242      NOTICE    Flow                 Unlocked site.
+14-12-09 16:11:24 26349      CRITICAL  Flow                 Uncaught exception #1045 in line 36 of /home/gcopin/www/neos/demoneos/Packages/Libraries/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php: SQLSTATE[28000] [1045] Access denied for user 'gcopin'@'localhost' (using password: NO) - See also: 20141209161044270914.txt
+14-12-09 16:11:24 26349      CRITICAL  Flow                 Uncaught exception #1045 in line 48 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Persistence_Doctrine_QueryResult.php: The database username / password specified in the configuration seem to be wrong. - See also: 201412091610447aec2a.txt
+14-12-09 16:11:57 25409      CRITICAL  Flow                 Uncaught exception #1210858767 in line 539 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_ActionRequest.php: Invalid argument name (must be a non-empty string). - See also: 201412091611572257c6.txt
+14-12-09 16:11:57 23269      CRITICAL  Flow                 Uncaught exception #1210858767 in line 539 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Flow_Mvc_ActionRequest.php: Invalid argument name (must be a non-empty string). - See also: 20141209161157497b3c.txt
+14-12-09 16:12:00 26531      INFO      Flow                 Session: Started session with id SD6XgAd3rBuymjzsvb55k3oHcjlSHV9l.
+14-12-09 16:12:00 26531      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:12:01 26531      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:12:24 26901      INFO      Flow                 Session: Changed session id from SD6XgAd3rBuymjzsvb55k3oHcjlSHV9l to K8pdhnlPZTgLMxgAFZeMtqZvv4Jlkelj
+14-12-09 16:12:25 26901      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:12:44 26349      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:12:49 26349      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:13:02 26349      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:13:53 25409      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:13:54 25409      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:14:34 25301      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:14:35 25301      INFO      Flow                 Session: Destroyed session with id K8pdhnlPZTgLMxgAFZeMtqZvv4Jlkelj: Logout through AuthenticationProviderManager
+14-12-09 16:14:49 24910      INFO      Flow                 Session: Started session with id Jrqj5LWZQVHksNBzN6mZRBtCPc7RMAqS.
+14-12-09 16:14:54 26349      INFO      Flow                 Session: Changed session id from Jrqj5LWZQVHksNBzN6mZRBtCPc7RMAqS to ycvm9GisIsflkHkOkjhF2ec9jrLc0YhG
+14-12-09 16:14:54 26349      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:14:56 26349      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:15:00 26928      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:20:52 25301      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:10 23284      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:10 25301      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:11 25301      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:17 24682      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:19 24682      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:27 30749      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:37 26901      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:22:49 26928      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:23:25 23284      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:23:34 24682      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:23:37 24682      CRITICAL  TYPO3CR              Uncaught exception #1292503468 in line 216 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Neos_Service_Controller_NodeController.php: Node with path "unnamed" already exists. - See also: 20141209162337113bd6.txt
+14-12-09 16:23:54 25409      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:24:06 26901      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:24:46 23269      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:24:48 25301      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:24:57 24682      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:24:58 23284      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:25:04 30752      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:29:33 26928      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:29:56 26901      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 20141209162955958e07.txt
+14-12-09 16:30:24 24910      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 20141209163023658e68.txt
+14-12-09 16:30:37 31267      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 201412091630370a67bc.txt
+14-12-09 16:30:44 26901      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:30:51 24910      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 20141209163050401897.txt
+14-12-09 16:30:51 24910      INFO      Flow                 Session: Triggered garbage collection but no sessions needed to be removed.
+14-12-09 16:30:55 24910      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 20141209163054f40b7e.txt
+14-12-09 16:31:02 25409      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 201412091631019fb6f2.txt
+14-12-09 16:31:05 25409      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 20141209163105cf25be.txt
+14-12-09 16:31:10 25409      CRITICAL  Fluid                Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist. - See also: 201412091631094497e5.txt

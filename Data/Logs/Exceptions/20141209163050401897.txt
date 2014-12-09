@@ -1,0 +1,116 @@
+Uncaught exception #1407060572 in line 480 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Fluid_Core_Parser_TemplateParser.php: The ViewHelper "<f:cObject>" could not be resolved.
+Based on your spelling, the system would load the class "TYPO3\Fluid\ViewHelpers\CObjectViewHelper", however this class does not exist.
+
+42 TYPO3\Fluid\Core\Parser\TemplateParser_Original::initializeViewHelperAndAddItToStack(TYPO3\Fluid\Core\Parser\ParsingState, "f", "cObject", array|1|)
+41 TYPO3\Fluid\Core\Parser\TemplateParser_Original::openingViewHelperTagHandler(TYPO3\Fluid\Core\Parser\ParsingState, "f", "cObject", " typoscriptObjectPath="menu.site" ", TRUE)
+40 TYPO3\Fluid\Core\Parser\TemplateParser_Original::buildObjectTree(array|27|, 2)
+39 TYPO3\Fluid\Core\Parser\TemplateParser_Original::parse("<!DOCTYPE html>
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<link rel="stylesheet" href="{f:uri.resource(path: 'css/main.css', package: 'Inouit.Carvin')}" media="all" />
+	</f:section>
+	<f:section name="headScripts">
+		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+	<!--Header-->
+	<div id="sites" class="nav">
+	  <f:cObject typoscriptObjectPath="menu.site" />
+	</div>
+
+	<div id="header" class="header">
+	  <div class="page">
+	   <!--Header-->
+	   <f:cObject typoscriptObjectPath="lib.logo" />
+
+	   <!--mainNav-->
+	   <f:cObject typoscriptObjectPath="menu.main" />
+	 </div>
+	</div>
+
+	<!--Content-->
+	<f:render section="mainContent" />
+
+	<!--Footer-->
+	<div id="footer" class="footer">
+	  <div class="page">
+	    <!--bottomNav-->
+	    <f:cObject typoscriptObjectPath="menu.bottom" />
+	  </div>
+	</div>
+
+
+	<nav class="menu">
+		{parts.menu -> f:format.raw()}
+	</nav>
+	<nav class="breadcrumb">
+		{parts.breadcrumb -> f:format.raw()}
+	</nav>
+	<div class="content">
+		{content.main -> f:format.raw()}
+	</div>
+</f:section>
+<f:section name="bodyScripts">
+	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by TypoScript -->
+</f:section>
+</body>
+</html>
+")
+38 TYPO3\Fluid\View\AbstractTemplateView::renderStandaloneSection("headScripts", NULL, FALSE)
+37 TYPO3\Fluid\View\AbstractTemplateView::renderSection("headScripts")
+36 TYPO3\TypoScript\TypoScriptObjects\TemplateImplementation_Original::evaluate()
+35 TYPO3\TypoScript\Core\Runtime_Original::evaluateInternal("page<TYPO3.Neos:Page>/head<TYPO3.TypoScript:Array>/javascripts<TYPO3.TypoScript:Array>/site", "NULL", TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation)
+34 TYPO3\TypoScript\Core\Runtime_Original::evaluate("page<TYPO3.Neos:Page>/head<TYPO3.TypoScript:Array>/javascripts<TYPO3.TypoScript:Array>/site", TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation)
+33 TYPO3\TypoScript\TypoScriptObjects\AbstractTypoScriptObject::tsValue("site")
+32 TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation_Original::evaluate()
+31 TYPO3\TypoScript\Core\Runtime_Original::evaluateInternal("page<TYPO3.Neos:Page>/head<TYPO3.TypoScript:Array>/javascripts", "NULL", TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation)
+30 TYPO3\TypoScript\Core\Runtime_Original::evaluate("page<TYPO3.Neos:Page>/head<TYPO3.TypoScript:Array>/javascripts", TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation)
+29 TYPO3\TypoScript\TypoScriptObjects\AbstractTypoScriptObject::tsValue("javascripts")
+28 TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation_Original::evaluate()
+27 TYPO3\TypoScript\Core\Runtime_Original::evaluateInternal("page<TYPO3.Neos:Page>/head", "NULL", TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation)
+26 TYPO3\TypoScript\Core\Runtime_Original::evaluate("page<TYPO3.Neos:Page>/head", TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation)
+25 TYPO3\TypoScript\TypoScriptObjects\AbstractTypoScriptObject::tsValue("head")
+24 TYPO3\TypoScript\TypoScriptObjects\ArrayImplementation_Original::evaluate()
+23 TYPO3\TypoScript\Core\Runtime_Original::evaluateInternal("page", "Exception")
+22 TYPO3\TypoScript\Core\Runtime_Original::render("page")
+21 TYPO3\TypoScript\TypoScriptObjects\MatcherImplementation_Original::evaluate()
+20 TYPO3\TypoScript\Core\Runtime_Original::evaluateInternal("root<TYPO3.TypoScript:Case>/default<TYPO3.TypoScript:Matcher>", "Exception")
+19 TYPO3\TypoScript\Core\Runtime_Original::render("root<TYPO3.TypoScript:Case>/default<TYPO3.TypoScript:Matcher>")
+18 TYPO3\TypoScript\TypoScriptObjects\CaseImplementation_Original::renderMatcher("default")
+17 TYPO3\TypoScript\TypoScriptObjects\CaseImplementation_Original::evaluate()
+16 TYPO3\TypoScript\Core\Runtime_Original::evaluateInternal("root", "Exception")
+15 TYPO3\TypoScript\Core\Runtime_Original::render("root")
+14 TYPO3\Neos\View\TypoScriptView_Original::render()
+13 TYPO3\Flow\Mvc\Controller\ActionController_Original::callActionMethod()
+12 TYPO3\Flow\Mvc\Controller\ActionController_Original::processRequest(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+11 TYPO3\Flow\Mvc\Dispatcher_Original::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+10 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+9 call_user_func_array(array|2|, array|2|)
+8 TYPO3\Flow\Mvc\Dispatcher::Flow_Aop_Proxy_invokeJoinPoint(TYPO3\Flow\Aop\JoinPoint)
+7 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+6 TYPO3\Flow\Security\Aspect\RequestDispatchingAspect_Original::blockIllegalRequestsAndForwardToAuthenticationEntryPoints(TYPO3\Flow\Aop\JoinPoint)
+5 TYPO3\Flow\Aop\Advice\AroundAdvice::invoke(TYPO3\Flow\Aop\JoinPoint)
+4 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+3 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()
+
+HTTP REQUEST:
+GET / HTTP/1.1
+Host: demoneos.local.inouit.com
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: fr-FR,fr;q=0.8
+Cache-Control: max-age=0
+
+
+
+HTTP RESPONSE:
+[response was empty]

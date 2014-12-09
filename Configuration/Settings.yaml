@@ -1,0 +1,10 @@
+
+TYPO3:
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        dbname: local_neos_demoneos
+        user: github
+        password: 'github*46'
+        host: 127.0.0.1

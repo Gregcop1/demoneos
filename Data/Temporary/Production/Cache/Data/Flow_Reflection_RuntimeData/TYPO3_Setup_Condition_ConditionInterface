@@ -1,0 +1,1 @@
+a:3:{i:6;b:1;i:8;a:2:{s:10:"setOptions";a:2:{i:12;i:3;i:13;a:1:{s:7:"options";a:3:{i:16;i:0;i:19;b:1;i:18;s:5:"array";}}}s:5:"isMet";a:1:{i:12;i:3;}}i:1;a:2:{s:49:"TYPO3\Setup\Condition\DatabaseConnectionCondition";b:1;s:40:"TYPO3\Setup\Condition\PdoDriverCondition";b:1;}}

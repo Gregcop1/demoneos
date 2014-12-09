@@ -1,0 +1,52 @@
+Uncaught exception #1045 in line 36 of /home/gcopin/www/neos/demoneos/Packages/Libraries/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php: SQLSTATE[28000] [1045] Access denied for user 'gcopin'@'localhost' (using password: NO)
+
+36 PDO::__construct("mysql:host=127.0.0.1;charset=utf8;", NULL, NULL, array|0|)
+35 Doctrine\DBAL\Driver\PDOConnection::__construct("mysql:host=127.0.0.1;charset=utf8;", NULL, NULL, array|0|)
+34 Doctrine\DBAL\Driver\PDOMySql\Driver::connect(array|6|, NULL, NULL, array|0|)
+33 Doctrine\DBAL\Connection::connect()
+32 Doctrine\DBAL\Connection::executeQuery("SELECT t0_.persistence_object_identifier AS persistence_object_identifier0, t0_.hostpattern AS hostpattern1, t0_.active AS active2, t0_.site AS site3 FROM typo3_neos_domain_model_domain t0_", array|0|, array|0|, NULL)
+31 Doctrine\ORM\Query\Exec\SingleSelectExecutor::execute(Doctrine\DBAL\Connection, array|0|, array|0|)
+30 Doctrine\ORM\Query::_doExecute()
+29 Doctrine\ORM\AbstractQuery::execute(NULL, 1)
+28 Doctrine\ORM\AbstractQuery::getResult()
+27 TYPO3\Flow\Persistence\Doctrine\Query_Original::getResult()
+26 TYPO3\Flow\Persistence\Doctrine\QueryResult_Original::initialize()
+25 TYPO3\Flow\Persistence\Doctrine\QueryResult_Original::toArray()
+24 TYPO3\Neos\Domain\Repository\DomainRepository_Original::findOneByHost("demoneos.local.inouit.com")
+23 TYPO3\Neos\Domain\Repository\DomainRepository_Original::findOneByActiveRequest()
+22 call_user_func_array(array|2|, array|0|)
+21 TYPO3\Flow\Object\DependencyInjection\DependencyProxy::__call("findOneByActiveRequest", array|0|)
+20 TYPO3\Flow\Object\DependencyInjection\DependencyProxy::findOneByActiveRequest()
+19 TYPO3\Neos\Routing\FrontendNodeRoutePartHandler_Original::buildContextFromWorkspaceName("live", NULL)
+18 TYPO3\Neos\Routing\FrontendNodeRoutePartHandler_Original::buildContextFromPath("", FALSE)
+17 TYPO3\Neos\Routing\FrontendNodeRoutePartHandler_Original::buildContextFromRequestPath("")
+16 TYPO3\Neos\Routing\FrontendNodeRoutePartHandler_Original::convertRequestPathToNode("")
+15 TYPO3\Neos\Routing\FrontendNodeRoutePartHandler_Original::matchValue("")
+14 TYPO3\Flow\Mvc\Routing\DynamicRoutePart_Original::match("")
+13 TYPO3\Flow\Mvc\Routing\Route_Original::matches(TYPO3\Flow\Http\Request)
+12 TYPO3\Flow\Mvc\Routing\Router_Original::findMatchResults(TYPO3\Flow\Http\Request)
+11 TYPO3\Flow\Mvc\Routing\Router_Original::route(TYPO3\Flow\Http\Request)
+10 TYPO3\Flow\Mvc\Routing\Router::route(TYPO3\Flow\Http\Request)
+9 call_user_func_array(array|2|, array|1|)
+8 TYPO3\Flow\Mvc\Routing\Router::Flow_Aop_Proxy_invokeJoinPoint(TYPO3\Flow\Aop\JoinPoint)
+7 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+6 TYPO3\Fluid\Core\Widget\AjaxWidgetRoutingAspect_Original::routeAjaxWidgetRequestAdvice(TYPO3\Flow\Aop\JoinPoint)
+5 TYPO3\Flow\Aop\Advice\AroundAdvice::invoke(TYPO3\Flow\Aop\JoinPoint)
+4 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+3 TYPO3\Flow\Mvc\Routing\Router::route(TYPO3\Flow\Http\Request)
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()
+
+HTTP REQUEST:
+GET / HTTP/1.1
+Host: demoneos.local.inouit.com
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: fr-FR,fr;q=0.8
+
+
+
+HTTP RESPONSE:
+[response was empty]

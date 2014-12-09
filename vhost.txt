@@ -1,0 +1,26 @@
+<VirtualHost *:80>
+    DocumentRoot "/var/www/neos/demoneos/Web/"
+    
+    SetEnv FLOW_CONTEXT Production
+    ServerName demoneos.local.inouit.com
+
+    <Directory /var/www/neos/demoneos/Web/>
+            AllowOverride All
+
+            Order Deny,Allow
+            Deny from All
+            Allow from 127.0.0.1/32 192.168.1.0/24 192.168.0.0/24
+
+            #AuthType Basic
+            #AuthUserFile /var/www/neos/demoneos/Web/.htpasswd
+            #AuthName "Environnement Dev - Projet epadesasite Acces Restreint"
+            #Require valid-user
+
+            #Satisfy any
+    </Directory>
+
+    ErrorLog /var/log/apache2/demoneos.local.inouit.com-error.log
+    CustomLog /var/log/apache2/demoneos.local.inouit.com-access.log combined
+
+    ServerSignature Off
+</VirtualHost>

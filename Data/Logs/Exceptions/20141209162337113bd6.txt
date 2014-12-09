@@ -1,0 +1,45 @@
+Uncaught exception #1292503468 in line 216 of /home/gcopin/www/neos/demoneos/Data/Temporary/Production/Cache/Code/Flow_Object_Classes/TYPO3_Neos_Service_Controller_NodeController.php: Node with path "unnamed" already exists.
+
+24 TYPO3\TYPO3CR\Domain\Model\Node_Original::moveBefore(TYPO3\TYPO3CR\Domain\Model\Node)
+23 TYPO3\Neos\Service\Controller\NodeController_Original::moveAction(TYPO3\TYPO3CR\Domain\Model\Node, TYPO3\TYPO3CR\Domain\Model\Node, "before")
+22 TYPO3\Neos\Service\Controller\NodeController::moveAction(TYPO3\TYPO3CR\Domain\Model\Node, TYPO3\TYPO3CR\Domain\Model\Node, "before")
+21 call_user_func_array(array|2|, array|3|)
+20 TYPO3\Neos\Service\Controller\NodeController::Flow_Aop_Proxy_invokeJoinPoint(TYPO3\Flow\Aop\JoinPoint)
+19 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+18 TYPO3\Flow\Security\Aspect\PolicyEnforcementAspect_Original::enforcePolicy(TYPO3\Flow\Aop\JoinPoint)
+17 TYPO3\Flow\Aop\Advice\AroundAdvice::invoke(TYPO3\Flow\Aop\JoinPoint)
+16 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+15 TYPO3\Neos\Service\Controller\NodeController::moveAction(TYPO3\TYPO3CR\Domain\Model\Node, TYPO3\TYPO3CR\Domain\Model\Node, "before")
+14 call_user_func_array(array|2|, array|3|)
+13 TYPO3\Flow\Mvc\Controller\ActionController_Original::callActionMethod()
+12 TYPO3\Flow\Mvc\Controller\ActionController_Original::processRequest(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+11 TYPO3\Flow\Mvc\Dispatcher_Original::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+10 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+9 call_user_func_array(array|2|, array|2|)
+8 TYPO3\Flow\Mvc\Dispatcher::Flow_Aop_Proxy_invokeJoinPoint(TYPO3\Flow\Aop\JoinPoint)
+7 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+6 TYPO3\Flow\Security\Aspect\RequestDispatchingAspect_Original::blockIllegalRequestsAndForwardToAuthenticationEntryPoints(TYPO3\Flow\Aop\JoinPoint)
+5 TYPO3\Flow\Aop\Advice\AroundAdvice::invoke(TYPO3\Flow\Aop\JoinPoint)
+4 TYPO3\Flow\Aop\Advice\AdviceChain::proceed(TYPO3\Flow\Aop\JoinPoint)
+3 TYPO3\Flow\Mvc\Dispatcher::dispatch(TYPO3\Flow\Mvc\ActionRequest, TYPO3\Flow\Http\Response)
+2 TYPO3\Flow\Http\RequestHandler::handleRequest()
+1 TYPO3\Flow\Core\Bootstrap::run()
+
+HTTP REQUEST:
+PUT /neos/service/node/move HTTP/1.1
+Host: demoneos.local.inouit.com
+Connection: keep-alive
+Content-Length: 189
+Accept: */*
+Origin: http://demoneos.local.inouit.com
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://demoneos.local.inouit.com/subpage/decouvrir-carvin/unnamed@user-gcopin.html
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: fr-FR,fr;q=0.8
+
+node=%2Fsites%2Fcarvin%2Fsubpage%2Fdecouvrir-carvin%2Funnamed%40user-gcopin&targetNode=%2Fsites%2Fcarvin%2Funnamed%40user-gcopin&position=before&__csrfToken=7c216f466f33b4feb524795ede317d6e
+
+HTTP RESPONSE:
+[response was empty]

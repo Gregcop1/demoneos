@@ -1,0 +1,57 @@
+// # config: sizes, colors and fonts
+
+// Max width of the slice ( the max background size exceeding the content size )
+$sliceWidth  : 1400px;
+// Used on browser not supporting mediaqueries
+$baseWidth : 990px;
+
+// Max size of the page
+$max        : 990;
+$maxWidth   : $max * 1px;
+$pagePadding: 30;
+
+// Gutter width for the grid system
+$gutter     : 30px;
+
+// Radius
+$defaultRadius  : 5px;
+
+// Transition
+$defaultTransitionTime : 200ms;
+
+// # Colors
+$white           : #FFFFFF;
+$grey1           : #555555;
+$grey2           : #dddddd;
+$grey3           : #ededed;
+$grey4           : #aaaaaa;
+$black1          : #2e3038;
+$black2          : #212227;
+$black3          : #353742;
+
+$blue1          : #017189;
+
+$green1          : #92b90b;
+$green2          : #88c13c;
+$green3          : #82a50a;
+
+$pink1          : #d53983;
+$pink2          : #bf2971;
+
+$orange1         : #f55c41;
+$orange2         : #f25235;
+$orange3         : #f14223;
+
+$red            : #BC2422;
+
+$outlineBlue    : #aad4ff;
+$errorRed       : #e04831;
+
+// # Fonts
+$font : 'Source Sans Pro', sans-serif;
+
+// # Fonts weight
+$light : 300;
+$regular : 400;
+$semiBold : 600;
+$bold : 700;

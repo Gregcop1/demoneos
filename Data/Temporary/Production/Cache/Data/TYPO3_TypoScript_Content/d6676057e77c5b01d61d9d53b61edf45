@@ -1,0 +1,33 @@
+<!DOCTYPE html><html version="HTML+RDFa 1.1" xmlns="http://www.w3.org/1999/xhtml" xmlns:typo3="http://www.typo3.org/ns/2012/Flow/Packages/Neos/Content/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--
+	This website is powered by TYPO3 Neos, the next generation CMS, a free Open
+	Source Enterprise Content Management System licensed under the GNU/GPL.
+
+	TYPO3 Neos is based on Flow, a powerful PHP application framework licensed under the GNU/LGPL.
+
+	More information and contribution opportunities at http://neos.typo3.org and http://flow.typo3.org
+--><head><meta charset="UTF-8" /><title>Home</title>
+		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
+	
+		<!-- Put your stylesheet inclusions here, they will be included in your website by TypoScript -->
+	eval=page<TYPO3.Neos:Page>/head<TYPO3.TypoScript:Array>/neosBackendHeader{"node":{"type":"TYPO3\\TYPO3CR\\Domain\\Model\\Node","value":"\/sites\/carvin@user-gcopin"}}eval=page<TYPO3.Neos:Page>/head<TYPO3.TypoScript:Array>/neosBackendEndpoints{"node":{"type":"TYPO3\\TYPO3CR\\Domain\\Model\\Node","value":"\/sites\/carvin@user-gcopin"}}</head><body><div typeof="typo3:TYPO3.Neos.NodeTypes:Page" about="/sites/carvin@user-gcopin" class="" data-__sitename="Carvin" data-__siteroot="/sites/carvin@user-gcopin" data-context-__workspacename="user-gcopin" data-neos-__workspacename="live" data-neos-_typoscript-path="page&lt;TYPO3.Neos:Page&gt;/neosBackendDocumentNodeData" data-neos-_removed="false" data-neosdatatype-_removed="xsd:boolean" data-neos-_hidden="false" data-neosdatatype-_hidden="xsd:boolean" data-neos-_hidden-before-date-time="" data-neosdatatype-_hidden-before-date-time="xsd:date" data-neos-_hidden-after-date-time="" data-neosdatatype-_hidden-after-date-time="xsd:date" data-neos-_node-type="TYPO3.Neos.NodeTypes:Page" data-neos-title="Home" data-neos-_hidden-in-index="false" data-neosdatatype-_hidden-in-index="xsd:boolean" data-neos-layout="" data-neos-subpage-layout="" id="neos-page-metainformation"></div>
+	<nav class="menu">
+		f7272a49fed9c37ba946ab928f0a005e
+	</nav>
+	<nav class="breadcrumb">
+		6d74d7c9f8ca63a695287bb84612c4fe
+	</nav>
+	<div class="content">
+		adef009f9e3592d2f9e7d34b0c98589b
+	</div>
+
+	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by TypoScript -->
+eval=page<TYPO3.Neos:Page>/neosBackendContainer{"node":{"type":"TYPO3\\TYPO3CR\\Domain\\Model\\Node","value":"\/sites\/carvin@user-gcopin"}}<script data-neos-node="b2482f69-ea5c-326c-36c1-975dc392843f" src="http://demoneos.local.inouit.com/_Resources/Static/Packages/TYPO3.Neos/JavaScript/LastVisitedNode.js"></script>
+
+	
+		<script src="http://demoneos.local.inouit.com/_Resources/Static/Packages/TYPO3.Neos/Library/requirejs/require.js"></script>
+		
+				<script src="http://demoneos.local.inouit.com/_Resources/Static/Packages/TYPO3.Neos/JavaScript/ContentModule-built.js"></script>
+			
+	
+
+</body></html>0             Node_b2482f69-ea5c-326c-36c1-975dc392843f2982      

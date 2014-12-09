@@ -1,0 +1,1 @@
+a:1:{i:8;a:2:{s:24:"nearestContentCollection";a:2:{i:12;i:3;i:13;a:2:{s:4:"node";a:3:{i:16;i:0;i:20;s:40:"TYPO3\TYPO3CR\Domain\Model\NodeInterface";i:18;s:40:"TYPO3\TYPO3CR\Domain\Model\NodeInterface";}s:8:"nodePath";a:3:{i:16;i:1;i:21;b:1;i:18;s:6:"string";}}}s:18:"allowsCallOfMethod";a:2:{i:12;i:3;i:13;a:1:{s:10:"methodName";a:3:{i:16;i:0;i:21;b:1;i:18;s:6:"string";}}}}}

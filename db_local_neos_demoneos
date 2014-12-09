@@ -1,0 +1,893 @@
+-- MySQL dump 10.13  Distrib 5.5.40, for debian-linux-gnu (x86_64)
+--
+-- Host: localhost    Database: local_neos_demoneos
+-- ------------------------------------------------------
+-- Server version	5.5.40-0+wheezy1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `flow_doctrine_migrationstatus`
+--
+
+DROP TABLE IF EXISTS `flow_doctrine_migrationstatus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `flow_doctrine_migrationstatus` (
+  `version` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `flow_doctrine_migrationstatus`
+--
+
+LOCK TABLES `flow_doctrine_migrationstatus` WRITE;
+/*!40000 ALTER TABLE `flow_doctrine_migrationstatus` DISABLE KEYS */;
+INSERT INTO `flow_doctrine_migrationstatus` VALUES ('20110613223837'),('20110613224537'),('20110620155001'),('20110620155002'),('20110714212900'),('20110824124835'),('20110824124935'),('20110824125035'),('20110824125135'),('20110824181409'),('20110919164835'),('20110920104739'),('20110920125736'),('20110923125535'),('20110923125536'),('20110923125537'),('20110923125538'),('20110925123119'),('20110925123120'),('20110928114048'),('20111215172027'),('20120328152041'),('20120329220340'),('20120329220341'),('20120329220342'),('20120329220343'),('20120329220344'),('20120412093748'),('20120420132456'),('20120429213445'),('20120429213446'),('20120429213447'),('20120429213448'),('20120520211354'),('20120521125401'),('20120525141545'),('20120625211647'),('20120829124549'),('20120930203452'),('20120930211542'),('20121001181137'),('20121001201712'),('20121001202223'),('20121001204512'),('20121011140946'),('20121014005902'),('20121030221151'),('20121030221352'),('20121031190213'),('20130201104344'),('20130213130515'),('20130218100324'),('20130319131400'),('20130522131641'),('20130522132835'),('20130605174712'),('20130702151425'),('20130730151319'),('20130919143352'),('20130930182839'),('20131111235827'),('20131129110302'),('20131205174631'),('20140206124123'),('20140208173140'),('20140325173151');
+/*!40000 ALTER TABLE `flow_doctrine_migrationstatus` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_mvc_routing_objectpathmapping`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_mvc_routing_objectpathmapping`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_mvc_routing_objectpathmapping` (
+  `objecttype` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `uripattern` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `pathsegment` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `identifier` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`objecttype`,`uripattern`,`pathsegment`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_mvc_routing_objectpathmapping`
+--
+
+LOCK TABLES `typo3_flow_mvc_routing_objectpathmapping` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_mvc_routing_objectpathmapping` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_flow_mvc_routing_objectpathmapping` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_resource_publishing_abstractpublishingconfiguration`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_resource_publishing_abstractpublishingconfiguration`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_resource_publishing_abstractpublishingconfiguration` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `dtype` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_resource_publishing_abstractpublishingconfiguration`
+--
+
+LOCK TABLES `typo3_flow_resource_publishing_abstractpublishingconfiguration` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_resource_publishing_abstractpublishingconfiguration` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_flow_resource_publishing_abstractpublishingconfiguration` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_resource_resource`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_resource_resource`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_resource_resource` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `resourcepointer` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `filename` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `fileextension` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `publishingconfiguration` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  KEY `IDX_B4D45B323CB65D1` (`resourcepointer`),
+  KEY `IDX_B4D45B32A4A851AF` (`publishingconfiguration`),
+  CONSTRAINT `FK_B4D45B32A4A851AF` FOREIGN KEY (`publishingconfiguration`) REFERENCES `typo3_flow_resource_publishing_abstractpublishingconfiguration` (`persistence_object_identifier`),
+  CONSTRAINT `typo3_flow_resource_resource_ibfk_1` FOREIGN KEY (`resourcepointer`) REFERENCES `typo3_flow_resource_resourcepointer` (`hash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_resource_resource`
+--
+
+LOCK TABLES `typo3_flow_resource_resource` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_resource_resource` DISABLE KEYS */;
+INSERT INTO `typo3_flow_resource_resource` VALUES ('32e05530-589c-c519-7e9b-ae144f8331c6','7d0265f93741373a60457ba586f6d7a8c0865a09','cooking.jpg','jpg',NULL),('35696f1b-2cf8-3b47-9f37-6055f12e074f','930b8279a553880c49d7a73765778907ce392db5','smoking.jpg','jpg',NULL),('35c78a85-0926-16fc-01e8-5db5b0ba28a0','dd224dfed85490797a385d01ccd91053670d00ce','birds.jpg','jpg',NULL),('5b33560c-2748-406c-c853-63e9decdb3ac','30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f','alice-1.jpg','jpg',NULL),('654d31e4-963e-71e4-2ab0-976f80a617f0','504f2f8ad00d1a9ef228b288ca42107905c9e22e','people.jpg','jpg',NULL),('6aa700ce-9238-935c-1411-123a3508b73a','30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f','alice-1.jpg','jpg',NULL),('6acdda22-f10d-83bb-73fb-575412068ad2','b1b18947b2bebc44c6bbab46922f2a3856f5e33b','teatime.jpg','jpg',NULL),('7c9f6b8f-8b24-9a6c-ce83-e56ebc0a17b9','508d533cb989bddf1dbc68b4cb7cc5c72e598cf3','typo3-logo-cornify-small.png','png',NULL),('9c267897-d54f-2fea-eaa2-9a34afa36127','0641ce611d5171161c853f70ff1ae0f33dd4dc24','alice-2.jpg','jpg',NULL),('9d7d2d06-f8a0-e6a5-be19-2432a6b2628a','0641ce611d5171161c853f70ff1ae0f33dd4dc24','alice-2.jpg','jpg',NULL),('9f330157-00dc-dc31-2935-7a967fceb680','53e0e394fda7e8943fd5e15f041da1919e03d534','Alice-In-Wonderland.jpg','jpg',NULL),('bdfd1b89-ce23-0d66-9fd1-6c067919e7a9','ae939055564831ad71ed68284e3b6725f29c1045','flying.jpg','jpg',NULL),('d1f39e3a-f8e4-7dd1-63a2-7361d3fa31d2','85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14','piggy.jpg','jpg',NULL),('de60f399-fa29-b906-6986-ab61bd96d1e5','ee94449bfc53d38d8e286879f38365ef3e9ca215','roses.jpg','jpg',NULL),('e7e439d5-2df6-e248-7f92-5e80ca19a2d0','7861cd0cc497284869845b442b46ee25224c4685','queen.jpg','jpg',NULL),('e9f82729-3352-706d-20b8-6fe77f2db8b6','0d5f77e755f664b393b62ca51a056c06f05e83c6','alicecards.jpg','jpg',NULL),('ee85b501-4063-53e1-3139-19469391ff49','510905a6fae272e24c71a11c3646a96bf9443a70','Mad-Hatter.jpg','jpg',NULL);
+/*!40000 ALTER TABLE `typo3_flow_resource_resource` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_resource_resourcepointer`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_resource_resourcepointer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_resource_resourcepointer` (
+  `hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`hash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_resource_resourcepointer`
+--
+
+LOCK TABLES `typo3_flow_resource_resourcepointer` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_resource_resourcepointer` DISABLE KEYS */;
+INSERT INTO `typo3_flow_resource_resourcepointer` VALUES ('0641ce611d5171161c853f70ff1ae0f33dd4dc24'),('0d5f77e755f664b393b62ca51a056c06f05e83c6'),('30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f'),('504f2f8ad00d1a9ef228b288ca42107905c9e22e'),('508d533cb989bddf1dbc68b4cb7cc5c72e598cf3'),('510905a6fae272e24c71a11c3646a96bf9443a70'),('53e0e394fda7e8943fd5e15f041da1919e03d534'),('7861cd0cc497284869845b442b46ee25224c4685'),('7d0265f93741373a60457ba586f6d7a8c0865a09'),('85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14'),('930b8279a553880c49d7a73765778907ce392db5'),('ae939055564831ad71ed68284e3b6725f29c1045'),('b1b18947b2bebc44c6bbab46922f2a3856f5e33b'),('dd224dfed85490797a385d01ccd91053670d00ce'),('ee94449bfc53d38d8e286879f38365ef3e9ca215');
+/*!40000 ALTER TABLE `typo3_flow_resource_resourcepointer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_security_account`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_security_account`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_security_account` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `party` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `accountidentifier` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `authenticationprovidername` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `credentialssource` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `creationdate` datetime NOT NULL,
+  `expirationdate` datetime DEFAULT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `flow3_identity_typo3_flow3_security_account` (`accountidentifier`,`authenticationprovidername`),
+  KEY `IDX_65EFB31C89954EE0` (`party`),
+  CONSTRAINT `typo3_flow_security_account_ibfk_1` FOREIGN KEY (`party`) REFERENCES `typo3_party_domain_model_abstractparty` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_security_account`
+--
+
+LOCK TABLES `typo3_flow_security_account` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_security_account` DISABLE KEYS */;
+INSERT INTO `typo3_flow_security_account` VALUES ('38f52c0b-5a5d-1252-c432-f8bfe8639255','ba60be62-3019-4711-3656-c708b74282b6','demo','Typo3BackendProvider','bcrypt=>$2a$14$T/bXT0Dgxd3g/QB/WU1H0ewKmq4PaK9E2baRGrx4hpP5tTGEN.Qti','2013-12-18 15:55:45',NULL),('c2627c97-b16c-2f99-b0a7-509988c874f7','283b6677-d44e-6ee1-a4d0-7654fc225c4d','gcopin','Typo3BackendProvider','bcrypt=>$2a$14$YTllazb.1cjGKKLKUa05UO1dE7UEXKiOwSV.CaCXX/dbjOMNVA7.q','2014-12-09 16:13:51',NULL);
+/*!40000 ALTER TABLE `typo3_flow_security_account` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_security_account_roles_join`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_security_account_roles_join`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_security_account_roles_join` (
+  `flow_security_account` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `flow_policy_role` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`flow_security_account`,`flow_policy_role`),
+  KEY `IDX_ADF11BBC58842EFC` (`flow_security_account`),
+  KEY `IDX_ADF11BBC23A1047C` (`flow_policy_role`),
+  CONSTRAINT `FK_ADF11BBC23A1047C` FOREIGN KEY (`flow_policy_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`),
+  CONSTRAINT `FK_ADF11BBC58842EFC` FOREIGN KEY (`flow_security_account`) REFERENCES `typo3_flow_security_account` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_security_account_roles_join`
+--
+
+LOCK TABLES `typo3_flow_security_account_roles_join` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_security_account_roles_join` DISABLE KEYS */;
+INSERT INTO `typo3_flow_security_account_roles_join` VALUES ('38f52c0b-5a5d-1252-c432-f8bfe8639255','TYPO3.Neos:Administrator'),('c2627c97-b16c-2f99-b0a7-509988c874f7','TYPO3.Neos:Administrator');
+/*!40000 ALTER TABLE `typo3_flow_security_account_roles_join` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_security_authorization_resource_securitypublis_861cb`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_security_authorization_resource_securitypublis_861cb`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_security_authorization_resource_securitypublis_861cb` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `allowedroles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`persistence_object_identifier`),
+  CONSTRAINT `FK_234846D521E3D446` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_flow_resource_publishing_abstractpublishingconfiguration` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_security_authorization_resource_securitypublis_861cb`
+--
+
+LOCK TABLES `typo3_flow_security_authorization_resource_securitypublis_861cb` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_security_authorization_resource_securitypublis_861cb` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_flow_security_authorization_resource_securitypublis_861cb` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_security_policy_role`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_security_policy_role`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_security_policy_role` (
+  `identifier` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sourcehint` varchar(6) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_security_policy_role`
+--
+
+LOCK TABLES `typo3_flow_security_policy_role` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_security_policy_role` DISABLE KEYS */;
+INSERT INTO `typo3_flow_security_policy_role` VALUES ('Anonymous','system'),('AuthenticatedUser','system'),('Everybody','system'),('TYPO3.Neos:Administrator','policy'),('TYPO3.Neos:Editor','policy'),('TYPO3.Setup:Administrator','policy'),('TYPO3.TYPO3CR:Administrator','policy');
+/*!40000 ALTER TABLE `typo3_flow_security_policy_role` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_flow_security_policy_role_parentroles_join`
+--
+
+DROP TABLE IF EXISTS `typo3_flow_security_policy_role_parentroles_join`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_flow_security_policy_role_parentroles_join` (
+  `flow_policy_role` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `parent_role` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`flow_policy_role`,`parent_role`),
+  KEY `IDX_D459C58E23A1047C` (`flow_policy_role`),
+  KEY `IDX_D459C58E6A8ABCDE` (`parent_role`),
+  CONSTRAINT `FK_D459C58E23A1047C` FOREIGN KEY (`flow_policy_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`),
+  CONSTRAINT `FK_D459C58E6A8ABCDE` FOREIGN KEY (`parent_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_flow_security_policy_role_parentroles_join`
+--
+
+LOCK TABLES `typo3_flow_security_policy_role_parentroles_join` WRITE;
+/*!40000 ALTER TABLE `typo3_flow_security_policy_role_parentroles_join` DISABLE KEYS */;
+INSERT INTO `typo3_flow_security_policy_role_parentroles_join` VALUES ('TYPO3.Neos:Administrator','TYPO3.Neos:Editor'),('TYPO3.Neos:Editor','TYPO3.TYPO3CR:Administrator');
+/*!40000 ALTER TABLE `typo3_flow_security_policy_role_parentroles_join` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_asset`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_asset`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_asset` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `dtype` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `resource` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `caption` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `lastmodified` datetime NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  KEY `IDX_B8306B8EBC91F416` (`resource`),
+  CONSTRAINT `FK_B8306B8EBC91F416` FOREIGN KEY (`resource`) REFERENCES `typo3_flow_resource_resource` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_asset`
+--
+
+LOCK TABLES `typo3_media_domain_model_asset` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_asset` DISABLE KEYS */;
+INSERT INTO `typo3_media_domain_model_asset` VALUES ('00557c59-a3dc-6732-aadd-2073a56fd3bf','typo3_media_image','bdfd1b89-ce23-0d66-9fd1-6c067919e7a9','','','2013-12-18 15:56:22'),('23410ab9-bf19-2525-62f4-2d2a5cdf4369','typo3_media_image','654d31e4-963e-71e4-2ab0-976f80a617f0','','','2013-12-18 15:56:28'),('44da623c-3905-ff1c-bfbf-09f80337d173','typo3_media_image','35696f1b-2cf8-3b47-9f37-6055f12e074f','','','2013-12-18 15:56:25'),('473023c7-9bc5-cb9a-bb07-699d87ae3be7','typo3_media_image','e7e439d5-2df6-e248-7f92-5e80ca19a2d0','','','2013-12-18 15:56:26'),('9327a7da-67fd-6fa7-c8ef-43e4b2d42d40','typo3_media_image','9f330157-00dc-dc31-2935-7a967fceb680','','','2013-12-18 15:56:07'),('ab8044a6-806c-0634-74ef-9a65aa68e9ac','typo3_media_image','5b33560c-2748-406c-c853-63e9decdb3ac','','','2013-12-18 15:55:59'),('ab89e2c2-8eb1-eb26-1ced-468eecc23039','typo3_media_image','6aa700ce-9238-935c-1411-123a3508b73a','','','2013-12-18 15:56:20'),('bcd1b740-0ea0-560c-3265-8c6fa01bae91','typo3_media_image','32e05530-589c-c519-7e9b-ae144f8331c6','','','2013-12-18 15:56:27'),('c152652a-5799-a7ce-c399-0da54f7e2cca','typo3_media_image','d1f39e3a-f8e4-7dd1-63a2-7361d3fa31d2','','','2013-12-18 15:56:25'),('c81d1956-0dd1-fb83-3fc0-ed0fb7ba5642','typo3_media_image','6acdda22-f10d-83bb-73fb-575412068ad2','','','2013-12-18 15:56:26'),('d6ada6dc-74dd-cbad-bbf4-e1e6814adcac','typo3_media_image','9d7d2d06-f8a0-e6a5-be19-2432a6b2628a','','','2013-12-18 15:56:21'),('d89d9770-0031-b4e3-5d14-0d26749ed1f3','typo3_media_image','35c78a85-0926-16fc-01e8-5db5b0ba28a0','','','2013-12-18 15:56:27'),('d94d1680-93e8-8208-d025-aa8277dc2579','typo3_media_image','de60f399-fa29-b906-6986-ab61bd96d1e5','','','2013-12-18 15:56:28'),('f254c54c-d533-71b9-fdb1-804473c9b56e','typo3_media_image','7c9f6b8f-8b24-9a6c-ce83-e56ebc0a17b9','','','2013-12-18 15:56:13'),('f58bb35c-51a2-c78d-c9ab-02b8db82b6d5','typo3_media_image','ee85b501-4063-53e1-3139-19469391ff49','','','2013-12-18 15:56:07'),('f844d7de-9611-668e-1ecb-c95ec88f3b46','typo3_media_image','9c267897-d54f-2fea-eaa2-9a34afa36127','','','2013-12-18 15:56:00'),('f8b40979-48e4-960d-c3d7-eb03cd987800','typo3_media_image','e9f82729-3352-706d-20b8-6fe77f2db8b6','','','2013-12-18 15:56:24');
+/*!40000 ALTER TABLE `typo3_media_domain_model_asset` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_asset_tags_join`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_asset_tags_join`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_asset_tags_join` (
+  `media_asset` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `media_tag` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`media_asset`,`media_tag`),
+  KEY `IDX_DAF7A1EB1DB69EED` (`media_asset`),
+  KEY `IDX_DAF7A1EB48D8C57E` (`media_tag`),
+  CONSTRAINT `FK_DAF7A1EB1DB69EED` FOREIGN KEY (`media_asset`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`),
+  CONSTRAINT `FK_DAF7A1EB48D8C57E` FOREIGN KEY (`media_tag`) REFERENCES `typo3_media_domain_model_tag` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_asset_tags_join`
+--
+
+LOCK TABLES `typo3_media_domain_model_asset_tags_join` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_asset_tags_join` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_media_domain_model_asset_tags_join` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_audio`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_audio`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_audio` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  CONSTRAINT `FK_A2E2074747A46B0A` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_audio`
+--
+
+LOCK TABLES `typo3_media_domain_model_audio` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_audio` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_media_domain_model_audio` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_document`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_document`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_document` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  CONSTRAINT `FK_F089E2F547A46B0A` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_document`
+--
+
+LOCK TABLES `typo3_media_domain_model_document` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_document` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_media_domain_model_document` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_image`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_image`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_image` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `width` int(11) NOT NULL,
+  `height` int(11) NOT NULL,
+  `type` int(11) NOT NULL,
+  `imagevariants` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`persistence_object_identifier`),
+  CONSTRAINT `FK_7FA2358D47A46B0A` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_image`
+--
+
+LOCK TABLES `typo3_media_domain_model_image` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_image` DISABLE KEYS */;
+INSERT INTO `typo3_media_domain_model_image` VALUES ('00557c59-a3dc-6732-aadd-2073a56fd3bf',373,500,2,'a:0:{}'),('23410ab9-bf19-2525-62f4-2d2a5cdf4369',359,500,2,'a:0:{}'),('44da623c-3905-ff1c-bfbf-09f80337d173',337,500,2,'a:0:{}'),('473023c7-9bc5-cb9a-bb07-699d87ae3be7',364,500,2,'a:0:{}'),('9327a7da-67fd-6fa7-c8ef-43e4b2d42d40',1600,500,2,'a:0:{}'),('ab8044a6-806c-0634-74ef-9a65aa68e9ac',359,500,2,'a:0:{}'),('ab89e2c2-8eb1-eb26-1ced-468eecc23039',359,500,2,'a:0:{}'),('bcd1b740-0ea0-560c-3265-8c6fa01bae91',384,500,2,'a:0:{}'),('c152652a-5799-a7ce-c399-0da54f7e2cca',357,500,2,'a:0:{}'),('c81d1956-0dd1-fb83-3fc0-ed0fb7ba5642',359,500,2,'a:0:{}'),('d6ada6dc-74dd-cbad-bbf4-e1e6814adcac',353,500,2,'a:0:{}'),('d89d9770-0031-b4e3-5d14-0d26749ed1f3',372,500,2,'a:0:{}'),('d94d1680-93e8-8208-d025-aa8277dc2579',364,500,2,'a:0:{}'),('f254c54c-d533-71b9-fdb1-804473c9b56e',1200,335,3,'a:0:{}'),('f58bb35c-51a2-c78d-c9ab-02b8db82b6d5',1600,500,2,'a:0:{}'),('f844d7de-9611-668e-1ecb-c95ec88f3b46',353,500,2,'a:0:{}'),('f8b40979-48e4-960d-c3d7-eb03cd987800',356,500,2,'a:0:{}');
+/*!40000 ALTER TABLE `typo3_media_domain_model_image` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_tag`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_tag`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_tag` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `label` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_tag`
+--
+
+LOCK TABLES `typo3_media_domain_model_tag` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_tag` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_media_domain_model_tag` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_media_domain_model_video`
+--
+
+DROP TABLE IF EXISTS `typo3_media_domain_model_video`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_media_domain_model_video` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `width` int(11) NOT NULL,
+  `height` int(11) NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  CONSTRAINT `FK_C658EBFE47A46B0A` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_media_domain_model_video`
+--
+
+LOCK TABLES `typo3_media_domain_model_video` WRITE;
+/*!40000 ALTER TABLE `typo3_media_domain_model_video` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_media_domain_model_video` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_neos_domain_model_domain`
+--
+
+DROP TABLE IF EXISTS `typo3_neos_domain_model_domain`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_neos_domain_model_domain` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `site` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `hostpattern` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `flow_identity_typo3_neos_domain_model_domain` (`hostpattern`),
+  KEY `IDX_F227E8F6694309E4` (`site`),
+  CONSTRAINT `typo3_neos_domain_model_domain_ibfk_1` FOREIGN KEY (`site`) REFERENCES `typo3_neos_domain_model_site` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_neos_domain_model_domain`
+--
+
+LOCK TABLES `typo3_neos_domain_model_domain` WRITE;
+/*!40000 ALTER TABLE `typo3_neos_domain_model_domain` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_neos_domain_model_domain` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_neos_domain_model_site`
+--
+
+DROP TABLE IF EXISTS `typo3_neos_domain_model_site`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_neos_domain_model_site` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `nodename` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `state` int(11) NOT NULL,
+  `siteresourcespackagekey` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `flow3_identity_typo3_typo3_domain_model_site` (`nodename`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_neos_domain_model_site`
+--
+
+LOCK TABLES `typo3_neos_domain_model_site` WRITE;
+/*!40000 ALTER TABLE `typo3_neos_domain_model_site` DISABLE KEYS */;
+INSERT INTO `typo3_neos_domain_model_site` VALUES ('82015b2f-3e11-171d-cba9-043a971de9c9','Carvin','carvin',1,'Inouit.Carvin');
+/*!40000 ALTER TABLE `typo3_neos_domain_model_site` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_neos_domain_model_user`
+--
+
+DROP TABLE IF EXISTS `typo3_neos_domain_model_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_neos_domain_model_user` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `preferences` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `UNIQ_E3F98B13E931A6F5` (`preferences`),
+  CONSTRAINT `typo3_neos_domain_model_user_ibfk_1` FOREIGN KEY (`preferences`) REFERENCES `typo3_neos_domain_model_userpreferences` (`persistence_object_identifier`),
+  CONSTRAINT `typo3_neos_domain_model_user_ibfk_2` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_party_domain_model_abstractparty` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_neos_domain_model_user`
+--
+
+LOCK TABLES `typo3_neos_domain_model_user` WRITE;
+/*!40000 ALTER TABLE `typo3_neos_domain_model_user` DISABLE KEYS */;
+INSERT INTO `typo3_neos_domain_model_user` VALUES ('ba60be62-3019-4711-3656-c708b74282b6','5284b8ee-98df-57cb-6cc3-268e2f248634'),('283b6677-d44e-6ee1-a4d0-7654fc225c4d','cb4529c5-75fc-c3d4-994f-2054a542a862');
+/*!40000 ALTER TABLE `typo3_neos_domain_model_user` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_neos_domain_model_userpreferences`
+--
+
+DROP TABLE IF EXISTS `typo3_neos_domain_model_userpreferences`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_neos_domain_model_userpreferences` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `preferences` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_neos_domain_model_userpreferences`
+--
+
+LOCK TABLES `typo3_neos_domain_model_userpreferences` WRITE;
+/*!40000 ALTER TABLE `typo3_neos_domain_model_userpreferences` DISABLE KEYS */;
+INSERT INTO `typo3_neos_domain_model_userpreferences` VALUES ('5284b8ee-98df-57cb-6cc3-268e2f248634','a:0:{}'),('cb4529c5-75fc-c3d4-994f-2054a542a862','a:0:{}');
+/*!40000 ALTER TABLE `typo3_neos_domain_model_userpreferences` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_neosdemotypo3org_domain_model_registration`
+--
+
+DROP TABLE IF EXISTS `typo3_neosdemotypo3org_domain_model_registration`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_neosdemotypo3org_domain_model_registration` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `firstname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_neosdemotypo3org_domain_model_registration`
+--
+
+LOCK TABLES `typo3_neosdemotypo3org_domain_model_registration` WRITE;
+/*!40000 ALTER TABLE `typo3_neosdemotypo3org_domain_model_registration` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_neosdemotypo3org_domain_model_registration` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_party_domain_model_abstractparty`
+--
+
+DROP TABLE IF EXISTS `typo3_party_domain_model_abstractparty`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_party_domain_model_abstractparty` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `dtype` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_party_domain_model_abstractparty`
+--
+
+LOCK TABLES `typo3_party_domain_model_abstractparty` WRITE;
+/*!40000 ALTER TABLE `typo3_party_domain_model_abstractparty` DISABLE KEYS */;
+INSERT INTO `typo3_party_domain_model_abstractparty` VALUES ('283b6677-d44e-6ee1-a4d0-7654fc225c4d','typo3_neos_user'),('ba60be62-3019-4711-3656-c708b74282b6','typo3_neos_user');
+/*!40000 ALTER TABLE `typo3_party_domain_model_abstractparty` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_party_domain_model_electronicaddress`
+--
+
+DROP TABLE IF EXISTS `typo3_party_domain_model_electronicaddress`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_party_domain_model_electronicaddress` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `identifier` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `usagetype` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `approved` tinyint(1) NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_party_domain_model_electronicaddress`
+--
+
+LOCK TABLES `typo3_party_domain_model_electronicaddress` WRITE;
+/*!40000 ALTER TABLE `typo3_party_domain_model_electronicaddress` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_party_domain_model_electronicaddress` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_party_domain_model_person`
+--
+
+DROP TABLE IF EXISTS `typo3_party_domain_model_person`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_party_domain_model_person` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `primaryelectronicaddress` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `UNIQ_C60479E15E237E06` (`name`),
+  KEY `IDX_C60479E1A7CECF13` (`primaryelectronicaddress`),
+  CONSTRAINT `typo3_party_domain_model_person_ibfk_1` FOREIGN KEY (`name`) REFERENCES `typo3_party_domain_model_personname` (`persistence_object_identifier`),
+  CONSTRAINT `typo3_party_domain_model_person_ibfk_2` FOREIGN KEY (`primaryelectronicaddress`) REFERENCES `typo3_party_domain_model_electronicaddress` (`persistence_object_identifier`),
+  CONSTRAINT `typo3_party_domain_model_person_ibfk_3` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_party_domain_model_abstractparty` (`persistence_object_identifier`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_party_domain_model_person`
+--
+
+LOCK TABLES `typo3_party_domain_model_person` WRITE;
+/*!40000 ALTER TABLE `typo3_party_domain_model_person` DISABLE KEYS */;
+INSERT INTO `typo3_party_domain_model_person` VALUES ('283b6677-d44e-6ee1-a4d0-7654fc225c4d','9cc914e5-e65a-ed28-2b67-f770417eb593',NULL),('ba60be62-3019-4711-3656-c708b74282b6','0c0650de-dcaf-1555-13c5-f5e45a33d045',NULL);
+/*!40000 ALTER TABLE `typo3_party_domain_model_person` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_party_domain_model_person_electronicaddresses_join`
+--
+
+DROP TABLE IF EXISTS `typo3_party_domain_model_person_electronicaddresses_join`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_party_domain_model_person_electronicaddresses_join` (
+  `party_person` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `party_electronicaddress` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`party_person`,`party_electronicaddress`),
+  KEY `IDX_759CC08F72AAAA2F` (`party_person`),
+  KEY `IDX_759CC08FB06BD60D` (`party_electronicaddress`),
+  CONSTRAINT `typo3_party_domain_model_person_electronicaddresses_join_ibfk_1` FOREIGN KEY (`party_person`) REFERENCES `typo3_party_domain_model_person` (`persistence_object_identifier`),
+  CONSTRAINT `typo3_party_domain_model_person_electronicaddresses_join_ibfk_2` FOREIGN KEY (`party_electronicaddress`) REFERENCES `typo3_party_domain_model_electronicaddress` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_party_domain_model_person_electronicaddresses_join`
+--
+
+LOCK TABLES `typo3_party_domain_model_person_electronicaddresses_join` WRITE;
+/*!40000 ALTER TABLE `typo3_party_domain_model_person_electronicaddresses_join` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_party_domain_model_person_electronicaddresses_join` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_party_domain_model_personname`
+--
+
+DROP TABLE IF EXISTS `typo3_party_domain_model_personname`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_party_domain_model_personname` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `firstname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `middlename` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `othername` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `alias` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `fullname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_party_domain_model_personname`
+--
+
+LOCK TABLES `typo3_party_domain_model_personname` WRITE;
+/*!40000 ALTER TABLE `typo3_party_domain_model_personname` DISABLE KEYS */;
+INSERT INTO `typo3_party_domain_model_personname` VALUES ('0c0650de-dcaf-1555-13c5-f5e45a33d045','','demo','','inouit','','demo','demo inouit'),('9cc914e5-e65a-ed28-2b67-f770417eb593','','Grégory','','Copin','','gcopin','Grégory Copin');
+/*!40000 ALTER TABLE `typo3_party_domain_model_personname` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_typo3cr_domain_model_contentobjectproxy`
+--
+
+DROP TABLE IF EXISTS `typo3_typo3cr_domain_model_contentobjectproxy`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_typo3cr_domain_model_contentobjectproxy` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `targettype` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `targetid` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_typo3cr_domain_model_contentobjectproxy`
+--
+
+LOCK TABLES `typo3_typo3cr_domain_model_contentobjectproxy` WRITE;
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_contentobjectproxy` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_contentobjectproxy` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_typo3cr_domain_model_nodedata`
+--
+
+DROP TABLE IF EXISTS `typo3_typo3cr_domain_model_nodedata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_typo3cr_domain_model_nodedata` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `workspace` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `contentobjectproxy` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `path` varchar(4000) COLLATE utf8_unicode_ci NOT NULL,
+  `identifier` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sortingindex` int(11) DEFAULT NULL,
+  `properties` longblob NOT NULL COMMENT '(DC2Type:objectarray)',
+  `nodetype` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `removed` tinyint(1) NOT NULL,
+  `hidden` tinyint(1) NOT NULL,
+  `hiddenbeforedatetime` datetime DEFAULT NULL,
+  `hiddenafterdatetime` datetime DEFAULT NULL,
+  `hiddeninindex` tinyint(1) NOT NULL,
+  `accessroles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  `version` int(11) NOT NULL DEFAULT '1',
+  `parentpath` varchar(4000) COLLATE utf8_unicode_ci NOT NULL,
+  `pathhash` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `dimensionshash` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `dimensionvalues` longblob NOT NULL COMMENT '(DC2Type:objectarray)',
+  `parentpathhash` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `UNIQ_60A956B92DBEC7578D94001992F8FB01` (`pathhash`,`workspace`,`dimensionshash`),
+  KEY `IDX_820CADC88D940019` (`workspace`),
+  KEY `IDX_820CADC84930C33C` (`contentobjectproxy`),
+  KEY `parentpath_sortingindex` (`parentpathhash`,`sortingindex`),
+  KEY `identifierindex` (`identifier`),
+  KEY `nodetypeindex` (`nodetype`),
+  CONSTRAINT `FK_60A956B98D940019` FOREIGN KEY (`workspace`) REFERENCES `typo3_typo3cr_domain_model_workspace` (`name`) ON DELETE SET NULL,
+  CONSTRAINT `typo3_typo3cr_domain_model_nodedata_ibfk_2` FOREIGN KEY (`contentobjectproxy`) REFERENCES `typo3_typo3cr_domain_model_contentobjectproxy` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_typo3cr_domain_model_nodedata`
+--
+
+LOCK TABLES `typo3_typo3cr_domain_model_nodedata` WRITE;
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_nodedata` DISABLE KEYS */;
+INSERT INTO `typo3_typo3cr_domain_model_nodedata` VALUES ('4558dc09-a7a4-ce63-4e21-3f8078cfc149','live',NULL,'/sites/carvin/subpage/main/text1','3a3577dd-11a2-9af8-af7a-ce5a753434b0',100,'a:1:{s:4:\"text\";s:33:\"<p>This is the first sub page</p>\";}','TYPO3.Neos.NodeTypes:Text',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/subpage/main','e86ef07817b964a15742d4b0cb33463d','d751713988987e9331980363e24189ce','a:0:{}','8c75b1a553f1c69c951f4dfb7b720a17'),('6d3ea6c2-4074-c753-2d37-3ce9222b6e4d','user-gcopin',NULL,'/','bf014d6d-2d6e-6db8-4374-c3e2039157ac',NULL,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',2,'','6666cd76f96956469e7be39d750cc7d9','d751713988987e9331980363e24189ce','a:0:{}','d41d8cd98f00b204e9800998ecf8427e'),('7d08628d-53b7-61b6-fb6d-b9093a5b666e','live',NULL,'/sites/carvin/subpage','966a7d49-7216-94a7-a879-aa082c0a0d11',200,'a:1:{s:5:\"title\";s:10:\"A sub page\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin','61a62d762255ded52487546b540f3609','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('8e15a826-dc38-f909-f257-3a5b20b5d6a1','live',NULL,'/sites/carvin/main','7d09a303-152e-f080-939a-7e0f61c62f2b',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin','ed096a85cae03258ee15eb8c0a924508','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('9d486d0c-3aeb-6e3b-fa14-ed990241c6cb','live',NULL,'/','2bc3db00-0706-f6fd-bf73-240df7bbd001',NULL,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',2,'','6666cd76f96956469e7be39d750cc7d9','d751713988987e9331980363e24189ce','a:0:{}','d41d8cd98f00b204e9800998ecf8427e'),('a283191c-f794-5721-f1c9-7fadd27ff8bb','live',NULL,'/sites/carvin/main/text1','ed99b697-22d6-facb-c8bc-dd2ef6f43894',100,'a:1:{s:4:\"text\";s:27:\"<p>This is the homepage</p>\";}','TYPO3.Neos.NodeTypes:Text',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/main','a43e25b5cb7e87bd54561283663b51b2','d751713988987e9331980363e24189ce','a:0:{}','ed096a85cae03258ee15eb8c0a924508'),('c85aac67-7e7e-a454-6261-ffd1733a342f','live',NULL,'/sites','71663008-d544-ad70-e574-38f2a3c4e5d7',100,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',1,'/','dbd87ae51cbf5240fea77283585e69d5','d751713988987e9331980363e24189ce','a:0:{}','6666cd76f96956469e7be39d750cc7d9'),('d725b3c4-1a31-87ad-b785-ee684e78ead2','live',NULL,'/sites/carvin','b2482f69-ea5c-326c-36c1-975dc392843f',100,'a:4:{s:4:\"name\";s:6:\"Carvin\";s:5:\"title\";s:4:\"Home\";s:5:\"state\";s:1:\"1\";s:23:\"siteResourcesPackageKey\";s:13:\"Inouit.Carvin\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',2,'/sites','642afa0c19b16ac6544b08240894835f','d751713988987e9331980363e24189ce','a:0:{}','dbd87ae51cbf5240fea77283585e69d5'),('dbc9cc69-569a-f53e-ad01-e508dcfb2f6e','live',NULL,'/sites/carvin/subpage/main','e7ac4b59-3c81-01ac-d159-35006367cc39',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/subpage','8c75b1a553f1c69c951f4dfb7b720a17','d751713988987e9331980363e24189ce','a:0:{}','61a62d762255ded52487546b540f3609');
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_nodedata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_typo3cr_domain_model_nodedimension`
+--
+
+DROP TABLE IF EXISTS `typo3_typo3cr_domain_model_nodedimension`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_typo3cr_domain_model_nodedimension` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `nodedata` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `value` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`),
+  UNIQUE KEY `UNIQ_6C144D3693BDC8E25E237E061D775834` (`nodedata`,`name`,`value`),
+  KEY `IDX_6C144D3693BDC8E2` (`nodedata`),
+  CONSTRAINT `FK_6C144D3693BDC8E2` FOREIGN KEY (`nodedata`) REFERENCES `typo3_typo3cr_domain_model_nodedata` (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_typo3cr_domain_model_nodedimension`
+--
+
+LOCK TABLES `typo3_typo3cr_domain_model_nodedimension` WRITE;
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_nodedimension` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_nodedimension` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_typo3cr_domain_model_workspace`
+--
+
+DROP TABLE IF EXISTS `typo3_typo3cr_domain_model_workspace`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_typo3cr_domain_model_workspace` (
+  `baseworkspace` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `rootnodedata` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`name`),
+  KEY `IDX_71DE9CFBE9BFE681` (`baseworkspace`),
+  KEY `IDX_71DE9CFBBB46155` (`rootnodedata`),
+  CONSTRAINT `FK_71DE9CFBBB46155` FOREIGN KEY (`rootnodedata`) REFERENCES `typo3_typo3cr_domain_model_nodedata` (`persistence_object_identifier`),
+  CONSTRAINT `FK_71DE9CFBE9BFE681` FOREIGN KEY (`baseworkspace`) REFERENCES `typo3_typo3cr_domain_model_workspace` (`name`) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_typo3cr_domain_model_workspace`
+--
+
+LOCK TABLES `typo3_typo3cr_domain_model_workspace` WRITE;
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_workspace` DISABLE KEYS */;
+INSERT INTO `typo3_typo3cr_domain_model_workspace` VALUES (NULL,'9d486d0c-3aeb-6e3b-fa14-ed990241c6cb','live'),('live','6d3ea6c2-4074-c753-2d37-3ce9222b6e4d','user-gcopin');
+/*!40000 ALTER TABLE `typo3_typo3cr_domain_model_workspace` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `typo3_typo3cr_migration_domain_model_migrationstatus`
+--
+
+DROP TABLE IF EXISTS `typo3_typo3cr_migration_domain_model_migrationstatus`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `typo3_typo3cr_migration_domain_model_migrationstatus` (
+  `persistence_object_identifier` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(14) COLLATE utf8_unicode_ci NOT NULL,
+  `direction` varchar(4) COLLATE utf8_unicode_ci NOT NULL,
+  `applicationtimestamp` datetime NOT NULL,
+  PRIMARY KEY (`persistence_object_identifier`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `typo3_typo3cr_migration_domain_model_migrationstatus`
+--
+
+LOCK TABLES `typo3_typo3cr_migration_domain_model_migrationstatus` WRITE;
+/*!40000 ALTER TABLE `typo3_typo3cr_migration_domain_model_migrationstatus` DISABLE KEYS */;
+/*!40000 ALTER TABLE `typo3_typo3cr_migration_domain_model_migrationstatus` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-12-09 16:17:09

@@ -113,7 +113,6 @@ CREATE TABLE `typo3_flow_resource_resource` (
 
 LOCK TABLES `typo3_flow_resource_resource` WRITE;
 /*!40000 ALTER TABLE `typo3_flow_resource_resource` DISABLE KEYS */;
-INSERT INTO `typo3_flow_resource_resource` VALUES ('32e05530-589c-c519-7e9b-ae144f8331c6','7d0265f93741373a60457ba586f6d7a8c0865a09','cooking.jpg','jpg',NULL),('35696f1b-2cf8-3b47-9f37-6055f12e074f','930b8279a553880c49d7a73765778907ce392db5','smoking.jpg','jpg',NULL),('35c78a85-0926-16fc-01e8-5db5b0ba28a0','dd224dfed85490797a385d01ccd91053670d00ce','birds.jpg','jpg',NULL),('5b33560c-2748-406c-c853-63e9decdb3ac','30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f','alice-1.jpg','jpg',NULL),('654d31e4-963e-71e4-2ab0-976f80a617f0','504f2f8ad00d1a9ef228b288ca42107905c9e22e','people.jpg','jpg',NULL),('6aa700ce-9238-935c-1411-123a3508b73a','30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f','alice-1.jpg','jpg',NULL),('6acdda22-f10d-83bb-73fb-575412068ad2','b1b18947b2bebc44c6bbab46922f2a3856f5e33b','teatime.jpg','jpg',NULL),('7c9f6b8f-8b24-9a6c-ce83-e56ebc0a17b9','508d533cb989bddf1dbc68b4cb7cc5c72e598cf3','typo3-logo-cornify-small.png','png',NULL),('9c267897-d54f-2fea-eaa2-9a34afa36127','0641ce611d5171161c853f70ff1ae0f33dd4dc24','alice-2.jpg','jpg',NULL),('9d7d2d06-f8a0-e6a5-be19-2432a6b2628a','0641ce611d5171161c853f70ff1ae0f33dd4dc24','alice-2.jpg','jpg',NULL),('9f330157-00dc-dc31-2935-7a967fceb680','53e0e394fda7e8943fd5e15f041da1919e03d534','Alice-In-Wonderland.jpg','jpg',NULL),('bdfd1b89-ce23-0d66-9fd1-6c067919e7a9','ae939055564831ad71ed68284e3b6725f29c1045','flying.jpg','jpg',NULL),('d1f39e3a-f8e4-7dd1-63a2-7361d3fa31d2','85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14','piggy.jpg','jpg',NULL),('de60f399-fa29-b906-6986-ab61bd96d1e5','ee94449bfc53d38d8e286879f38365ef3e9ca215','roses.jpg','jpg',NULL),('e7e439d5-2df6-e248-7f92-5e80ca19a2d0','7861cd0cc497284869845b442b46ee25224c4685','queen.jpg','jpg',NULL),('e9f82729-3352-706d-20b8-6fe77f2db8b6','0d5f77e755f664b393b62ca51a056c06f05e83c6','alicecards.jpg','jpg',NULL),('ee85b501-4063-53e1-3139-19469391ff49','510905a6fae272e24c71a11c3646a96bf9443a70','Mad-Hatter.jpg','jpg',NULL);
 /*!40000 ALTER TABLE `typo3_flow_resource_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,7 +135,6 @@ CREATE TABLE `typo3_flow_resource_resourcepointer` (
 
 LOCK TABLES `typo3_flow_resource_resourcepointer` WRITE;
 /*!40000 ALTER TABLE `typo3_flow_resource_resourcepointer` DISABLE KEYS */;
-INSERT INTO `typo3_flow_resource_resourcepointer` VALUES ('0641ce611d5171161c853f70ff1ae0f33dd4dc24'),('0d5f77e755f664b393b62ca51a056c06f05e83c6'),('30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f'),('504f2f8ad00d1a9ef228b288ca42107905c9e22e'),('508d533cb989bddf1dbc68b4cb7cc5c72e598cf3'),('510905a6fae272e24c71a11c3646a96bf9443a70'),('53e0e394fda7e8943fd5e15f041da1919e03d534'),('7861cd0cc497284869845b442b46ee25224c4685'),('7d0265f93741373a60457ba586f6d7a8c0865a09'),('85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14'),('930b8279a553880c49d7a73765778907ce392db5'),('ae939055564831ad71ed68284e3b6725f29c1045'),('b1b18947b2bebc44c6bbab46922f2a3856f5e33b'),('dd224dfed85490797a385d01ccd91053670d00ce'),('ee94449bfc53d38d8e286879f38365ef3e9ca215');
 /*!40000 ALTER TABLE `typo3_flow_resource_resourcepointer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -168,7 +166,7 @@ CREATE TABLE `typo3_flow_security_account` (
 
 LOCK TABLES `typo3_flow_security_account` WRITE;
 /*!40000 ALTER TABLE `typo3_flow_security_account` DISABLE KEYS */;
-INSERT INTO `typo3_flow_security_account` VALUES ('38f52c0b-5a5d-1252-c432-f8bfe8639255','ba60be62-3019-4711-3656-c708b74282b6','demo','Typo3BackendProvider','bcrypt=>$2a$14$T/bXT0Dgxd3g/QB/WU1H0ewKmq4PaK9E2baRGrx4hpP5tTGEN.Qti','2013-12-18 15:55:45',NULL),('c2627c97-b16c-2f99-b0a7-509988c874f7','283b6677-d44e-6ee1-a4d0-7654fc225c4d','gcopin','Typo3BackendProvider','bcrypt=>$2a$14$YTllazb.1cjGKKLKUa05UO1dE7UEXKiOwSV.CaCXX/dbjOMNVA7.q','2014-12-09 16:13:51',NULL);
+INSERT INTO `typo3_flow_security_account` VALUES ('1890f121-b815-9dff-ae64-e88887e7c6c1','c14c1e9e-d08b-320b-7b8e-5a72ad0030c3','gcopin','Typo3BackendProvider','bcrypt=>$2a$14$iDquQGfRZ1aOaUQYws.YwOIJNZxd78Gbtvh/I9cbPg.Hy5yaSRipy','2014-12-15 17:10:32',NULL);
 /*!40000 ALTER TABLE `typo3_flow_security_account` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -196,7 +194,7 @@ CREATE TABLE `typo3_flow_security_account_roles_join` (
 
 LOCK TABLES `typo3_flow_security_account_roles_join` WRITE;
 /*!40000 ALTER TABLE `typo3_flow_security_account_roles_join` DISABLE KEYS */;
-INSERT INTO `typo3_flow_security_account_roles_join` VALUES ('38f52c0b-5a5d-1252-c432-f8bfe8639255','TYPO3.Neos:Administrator'),('c2627c97-b16c-2f99-b0a7-509988c874f7','TYPO3.Neos:Administrator');
+INSERT INTO `typo3_flow_security_account_roles_join` VALUES ('1890f121-b815-9dff-ae64-e88887e7c6c1','TYPO3.Neos:Administrator');
 /*!40000 ALTER TABLE `typo3_flow_security_account_roles_join` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -261,8 +259,8 @@ CREATE TABLE `typo3_flow_security_policy_role_parentroles_join` (
   PRIMARY KEY (`flow_policy_role`,`parent_role`),
   KEY `IDX_D459C58E23A1047C` (`flow_policy_role`),
   KEY `IDX_D459C58E6A8ABCDE` (`parent_role`),
-  CONSTRAINT `FK_D459C58E23A1047C` FOREIGN KEY (`flow_policy_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`),
-  CONSTRAINT `FK_D459C58E6A8ABCDE` FOREIGN KEY (`parent_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`)
+  CONSTRAINT `FK_D459C58E6A8ABCDE` FOREIGN KEY (`parent_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`),
+  CONSTRAINT `FK_D459C58E23A1047C` FOREIGN KEY (`flow_policy_role`) REFERENCES `typo3_flow_security_policy_role` (`identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -302,7 +300,6 @@ CREATE TABLE `typo3_media_domain_model_asset` (
 
 LOCK TABLES `typo3_media_domain_model_asset` WRITE;
 /*!40000 ALTER TABLE `typo3_media_domain_model_asset` DISABLE KEYS */;
-INSERT INTO `typo3_media_domain_model_asset` VALUES ('00557c59-a3dc-6732-aadd-2073a56fd3bf','typo3_media_image','bdfd1b89-ce23-0d66-9fd1-6c067919e7a9','','','2013-12-18 15:56:22'),('23410ab9-bf19-2525-62f4-2d2a5cdf4369','typo3_media_image','654d31e4-963e-71e4-2ab0-976f80a617f0','','','2013-12-18 15:56:28'),('44da623c-3905-ff1c-bfbf-09f80337d173','typo3_media_image','35696f1b-2cf8-3b47-9f37-6055f12e074f','','','2013-12-18 15:56:25'),('473023c7-9bc5-cb9a-bb07-699d87ae3be7','typo3_media_image','e7e439d5-2df6-e248-7f92-5e80ca19a2d0','','','2013-12-18 15:56:26'),('9327a7da-67fd-6fa7-c8ef-43e4b2d42d40','typo3_media_image','9f330157-00dc-dc31-2935-7a967fceb680','','','2013-12-18 15:56:07'),('ab8044a6-806c-0634-74ef-9a65aa68e9ac','typo3_media_image','5b33560c-2748-406c-c853-63e9decdb3ac','','','2013-12-18 15:55:59'),('ab89e2c2-8eb1-eb26-1ced-468eecc23039','typo3_media_image','6aa700ce-9238-935c-1411-123a3508b73a','','','2013-12-18 15:56:20'),('bcd1b740-0ea0-560c-3265-8c6fa01bae91','typo3_media_image','32e05530-589c-c519-7e9b-ae144f8331c6','','','2013-12-18 15:56:27'),('c152652a-5799-a7ce-c399-0da54f7e2cca','typo3_media_image','d1f39e3a-f8e4-7dd1-63a2-7361d3fa31d2','','','2013-12-18 15:56:25'),('c81d1956-0dd1-fb83-3fc0-ed0fb7ba5642','typo3_media_image','6acdda22-f10d-83bb-73fb-575412068ad2','','','2013-12-18 15:56:26'),('d6ada6dc-74dd-cbad-bbf4-e1e6814adcac','typo3_media_image','9d7d2d06-f8a0-e6a5-be19-2432a6b2628a','','','2013-12-18 15:56:21'),('d89d9770-0031-b4e3-5d14-0d26749ed1f3','typo3_media_image','35c78a85-0926-16fc-01e8-5db5b0ba28a0','','','2013-12-18 15:56:27'),('d94d1680-93e8-8208-d025-aa8277dc2579','typo3_media_image','de60f399-fa29-b906-6986-ab61bd96d1e5','','','2013-12-18 15:56:28'),('f254c54c-d533-71b9-fdb1-804473c9b56e','typo3_media_image','7c9f6b8f-8b24-9a6c-ce83-e56ebc0a17b9','','','2013-12-18 15:56:13'),('f58bb35c-51a2-c78d-c9ab-02b8db82b6d5','typo3_media_image','ee85b501-4063-53e1-3139-19469391ff49','','','2013-12-18 15:56:07'),('f844d7de-9611-668e-1ecb-c95ec88f3b46','typo3_media_image','9c267897-d54f-2fea-eaa2-9a34afa36127','','','2013-12-18 15:56:00'),('f8b40979-48e4-960d-c3d7-eb03cd987800','typo3_media_image','e9f82729-3352-706d-20b8-6fe77f2db8b6','','','2013-12-18 15:56:24');
 /*!40000 ALTER TABLE `typo3_media_domain_model_asset` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -319,8 +316,8 @@ CREATE TABLE `typo3_media_domain_model_asset_tags_join` (
   PRIMARY KEY (`media_asset`,`media_tag`),
   KEY `IDX_DAF7A1EB1DB69EED` (`media_asset`),
   KEY `IDX_DAF7A1EB48D8C57E` (`media_tag`),
-  CONSTRAINT `FK_DAF7A1EB1DB69EED` FOREIGN KEY (`media_asset`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`),
-  CONSTRAINT `FK_DAF7A1EB48D8C57E` FOREIGN KEY (`media_tag`) REFERENCES `typo3_media_domain_model_tag` (`persistence_object_identifier`)
+  CONSTRAINT `FK_DAF7A1EB48D8C57E` FOREIGN KEY (`media_tag`) REFERENCES `typo3_media_domain_model_tag` (`persistence_object_identifier`),
+  CONSTRAINT `FK_DAF7A1EB1DB69EED` FOREIGN KEY (`media_asset`) REFERENCES `typo3_media_domain_model_asset` (`persistence_object_identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -403,7 +400,6 @@ CREATE TABLE `typo3_media_domain_model_image` (
 
 LOCK TABLES `typo3_media_domain_model_image` WRITE;
 /*!40000 ALTER TABLE `typo3_media_domain_model_image` DISABLE KEYS */;
-INSERT INTO `typo3_media_domain_model_image` VALUES ('00557c59-a3dc-6732-aadd-2073a56fd3bf',373,500,2,'a:0:{}'),('23410ab9-bf19-2525-62f4-2d2a5cdf4369',359,500,2,'a:0:{}'),('44da623c-3905-ff1c-bfbf-09f80337d173',337,500,2,'a:0:{}'),('473023c7-9bc5-cb9a-bb07-699d87ae3be7',364,500,2,'a:0:{}'),('9327a7da-67fd-6fa7-c8ef-43e4b2d42d40',1600,500,2,'a:0:{}'),('ab8044a6-806c-0634-74ef-9a65aa68e9ac',359,500,2,'a:0:{}'),('ab89e2c2-8eb1-eb26-1ced-468eecc23039',359,500,2,'a:0:{}'),('bcd1b740-0ea0-560c-3265-8c6fa01bae91',384,500,2,'a:0:{}'),('c152652a-5799-a7ce-c399-0da54f7e2cca',357,500,2,'a:0:{}'),('c81d1956-0dd1-fb83-3fc0-ed0fb7ba5642',359,500,2,'a:0:{}'),('d6ada6dc-74dd-cbad-bbf4-e1e6814adcac',353,500,2,'a:0:{}'),('d89d9770-0031-b4e3-5d14-0d26749ed1f3',372,500,2,'a:0:{}'),('d94d1680-93e8-8208-d025-aa8277dc2579',364,500,2,'a:0:{}'),('f254c54c-d533-71b9-fdb1-804473c9b56e',1200,335,3,'a:0:{}'),('f58bb35c-51a2-c78d-c9ab-02b8db82b6d5',1600,500,2,'a:0:{}'),('f844d7de-9611-668e-1ecb-c95ec88f3b46',353,500,2,'a:0:{}'),('f8b40979-48e4-960d-c3d7-eb03cd987800',356,500,2,'a:0:{}');
 /*!40000 ALTER TABLE `typo3_media_domain_model_image` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -507,7 +503,7 @@ CREATE TABLE `typo3_neos_domain_model_site` (
 
 LOCK TABLES `typo3_neos_domain_model_site` WRITE;
 /*!40000 ALTER TABLE `typo3_neos_domain_model_site` DISABLE KEYS */;
-INSERT INTO `typo3_neos_domain_model_site` VALUES ('82015b2f-3e11-171d-cba9-043a971de9c9','Carvin','carvin',1,'Inouit.Carvin');
+INSERT INTO `typo3_neos_domain_model_site` VALUES ('07658687-a8de-2a52-9688-5076da7c1d59','Carvin','carvin',1,'GC.Carvin');
 /*!40000 ALTER TABLE `typo3_neos_domain_model_site` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -534,7 +530,7 @@ CREATE TABLE `typo3_neos_domain_model_user` (
 
 LOCK TABLES `typo3_neos_domain_model_user` WRITE;
 /*!40000 ALTER TABLE `typo3_neos_domain_model_user` DISABLE KEYS */;
-INSERT INTO `typo3_neos_domain_model_user` VALUES ('ba60be62-3019-4711-3656-c708b74282b6','5284b8ee-98df-57cb-6cc3-268e2f248634'),('283b6677-d44e-6ee1-a4d0-7654fc225c4d','cb4529c5-75fc-c3d4-994f-2054a542a862');
+INSERT INTO `typo3_neos_domain_model_user` VALUES ('c14c1e9e-d08b-320b-7b8e-5a72ad0030c3','de67e0f5-8d73-faac-e53d-49624c734858');
 /*!40000 ALTER TABLE `typo3_neos_domain_model_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -558,7 +554,7 @@ CREATE TABLE `typo3_neos_domain_model_userpreferences` (
 
 LOCK TABLES `typo3_neos_domain_model_userpreferences` WRITE;
 /*!40000 ALTER TABLE `typo3_neos_domain_model_userpreferences` DISABLE KEYS */;
-INSERT INTO `typo3_neos_domain_model_userpreferences` VALUES ('5284b8ee-98df-57cb-6cc3-268e2f248634','a:0:{}'),('cb4529c5-75fc-c3d4-994f-2054a542a862','a:0:{}');
+INSERT INTO `typo3_neos_domain_model_userpreferences` VALUES ('de67e0f5-8d73-faac-e53d-49624c734858','a:0:{}');
 /*!40000 ALTER TABLE `typo3_neos_domain_model_userpreferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -608,7 +604,7 @@ CREATE TABLE `typo3_party_domain_model_abstractparty` (
 
 LOCK TABLES `typo3_party_domain_model_abstractparty` WRITE;
 /*!40000 ALTER TABLE `typo3_party_domain_model_abstractparty` DISABLE KEYS */;
-INSERT INTO `typo3_party_domain_model_abstractparty` VALUES ('283b6677-d44e-6ee1-a4d0-7654fc225c4d','typo3_neos_user'),('ba60be62-3019-4711-3656-c708b74282b6','typo3_neos_user');
+INSERT INTO `typo3_party_domain_model_abstractparty` VALUES ('c14c1e9e-d08b-320b-7b8e-5a72ad0030c3','typo3_neos_user');
 /*!40000 ALTER TABLE `typo3_party_domain_model_abstractparty` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -652,9 +648,9 @@ CREATE TABLE `typo3_party_domain_model_person` (
   PRIMARY KEY (`persistence_object_identifier`),
   UNIQUE KEY `UNIQ_C60479E15E237E06` (`name`),
   KEY `IDX_C60479E1A7CECF13` (`primaryelectronicaddress`),
+  CONSTRAINT `typo3_party_domain_model_person_ibfk_3` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_party_domain_model_abstractparty` (`persistence_object_identifier`) ON DELETE CASCADE,
   CONSTRAINT `typo3_party_domain_model_person_ibfk_1` FOREIGN KEY (`name`) REFERENCES `typo3_party_domain_model_personname` (`persistence_object_identifier`),
-  CONSTRAINT `typo3_party_domain_model_person_ibfk_2` FOREIGN KEY (`primaryelectronicaddress`) REFERENCES `typo3_party_domain_model_electronicaddress` (`persistence_object_identifier`),
-  CONSTRAINT `typo3_party_domain_model_person_ibfk_3` FOREIGN KEY (`persistence_object_identifier`) REFERENCES `typo3_party_domain_model_abstractparty` (`persistence_object_identifier`) ON DELETE CASCADE
+  CONSTRAINT `typo3_party_domain_model_person_ibfk_2` FOREIGN KEY (`primaryelectronicaddress`) REFERENCES `typo3_party_domain_model_electronicaddress` (`persistence_object_identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -664,7 +660,7 @@ CREATE TABLE `typo3_party_domain_model_person` (
 
 LOCK TABLES `typo3_party_domain_model_person` WRITE;
 /*!40000 ALTER TABLE `typo3_party_domain_model_person` DISABLE KEYS */;
-INSERT INTO `typo3_party_domain_model_person` VALUES ('283b6677-d44e-6ee1-a4d0-7654fc225c4d','9cc914e5-e65a-ed28-2b67-f770417eb593',NULL),('ba60be62-3019-4711-3656-c708b74282b6','0c0650de-dcaf-1555-13c5-f5e45a33d045',NULL);
+INSERT INTO `typo3_party_domain_model_person` VALUES ('c14c1e9e-d08b-320b-7b8e-5a72ad0030c3','41968acf-dc7f-388b-02a6-1695e20eb74e',NULL);
 /*!40000 ALTER TABLE `typo3_party_domain_model_person` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -721,7 +717,7 @@ CREATE TABLE `typo3_party_domain_model_personname` (
 
 LOCK TABLES `typo3_party_domain_model_personname` WRITE;
 /*!40000 ALTER TABLE `typo3_party_domain_model_personname` DISABLE KEYS */;
-INSERT INTO `typo3_party_domain_model_personname` VALUES ('0c0650de-dcaf-1555-13c5-f5e45a33d045','','demo','','inouit','','demo','demo inouit'),('9cc914e5-e65a-ed28-2b67-f770417eb593','','Grégory','','Copin','','gcopin','Grégory Copin');
+INSERT INTO `typo3_party_domain_model_personname` VALUES ('41968acf-dc7f-388b-02a6-1695e20eb74e','','Grégory','','Copin','','gcopin','Grégory Copin');
 /*!40000 ALTER TABLE `typo3_party_domain_model_personname` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -795,7 +791,7 @@ CREATE TABLE `typo3_typo3cr_domain_model_nodedata` (
 
 LOCK TABLES `typo3_typo3cr_domain_model_nodedata` WRITE;
 /*!40000 ALTER TABLE `typo3_typo3cr_domain_model_nodedata` DISABLE KEYS */;
-INSERT INTO `typo3_typo3cr_domain_model_nodedata` VALUES ('4558dc09-a7a4-ce63-4e21-3f8078cfc149','live',NULL,'/sites/carvin/subpage/main/text1','3a3577dd-11a2-9af8-af7a-ce5a753434b0',100,'a:1:{s:4:\"text\";s:33:\"<p>This is the first sub page</p>\";}','TYPO3.Neos.NodeTypes:Text',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/subpage/main','e86ef07817b964a15742d4b0cb33463d','d751713988987e9331980363e24189ce','a:0:{}','8c75b1a553f1c69c951f4dfb7b720a17'),('6d3ea6c2-4074-c753-2d37-3ce9222b6e4d','user-gcopin',NULL,'/','bf014d6d-2d6e-6db8-4374-c3e2039157ac',NULL,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',2,'','6666cd76f96956469e7be39d750cc7d9','d751713988987e9331980363e24189ce','a:0:{}','d41d8cd98f00b204e9800998ecf8427e'),('7d08628d-53b7-61b6-fb6d-b9093a5b666e','live',NULL,'/sites/carvin/subpage','966a7d49-7216-94a7-a879-aa082c0a0d11',200,'a:1:{s:5:\"title\";s:10:\"A sub page\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin','61a62d762255ded52487546b540f3609','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('8e15a826-dc38-f909-f257-3a5b20b5d6a1','live',NULL,'/sites/carvin/main','7d09a303-152e-f080-939a-7e0f61c62f2b',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin','ed096a85cae03258ee15eb8c0a924508','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('9d486d0c-3aeb-6e3b-fa14-ed990241c6cb','live',NULL,'/','2bc3db00-0706-f6fd-bf73-240df7bbd001',NULL,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',2,'','6666cd76f96956469e7be39d750cc7d9','d751713988987e9331980363e24189ce','a:0:{}','d41d8cd98f00b204e9800998ecf8427e'),('a283191c-f794-5721-f1c9-7fadd27ff8bb','live',NULL,'/sites/carvin/main/text1','ed99b697-22d6-facb-c8bc-dd2ef6f43894',100,'a:1:{s:4:\"text\";s:27:\"<p>This is the homepage</p>\";}','TYPO3.Neos.NodeTypes:Text',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/main','a43e25b5cb7e87bd54561283663b51b2','d751713988987e9331980363e24189ce','a:0:{}','ed096a85cae03258ee15eb8c0a924508'),('c85aac67-7e7e-a454-6261-ffd1733a342f','live',NULL,'/sites','71663008-d544-ad70-e574-38f2a3c4e5d7',100,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',1,'/','dbd87ae51cbf5240fea77283585e69d5','d751713988987e9331980363e24189ce','a:0:{}','6666cd76f96956469e7be39d750cc7d9'),('d725b3c4-1a31-87ad-b785-ee684e78ead2','live',NULL,'/sites/carvin','b2482f69-ea5c-326c-36c1-975dc392843f',100,'a:4:{s:4:\"name\";s:6:\"Carvin\";s:5:\"title\";s:4:\"Home\";s:5:\"state\";s:1:\"1\";s:23:\"siteResourcesPackageKey\";s:13:\"Inouit.Carvin\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',2,'/sites','642afa0c19b16ac6544b08240894835f','d751713988987e9331980363e24189ce','a:0:{}','dbd87ae51cbf5240fea77283585e69d5'),('dbc9cc69-569a-f53e-ad01-e508dcfb2f6e','live',NULL,'/sites/carvin/subpage/main','e7ac4b59-3c81-01ac-d159-35006367cc39',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/subpage','8c75b1a553f1c69c951f4dfb7b720a17','d751713988987e9331980363e24189ce','a:0:{}','61a62d762255ded52487546b540f3609');
+INSERT INTO `typo3_typo3cr_domain_model_nodedata` VALUES ('03d4e862-3da9-9ce8-d2cb-33dde6c78abf','live',NULL,'/sites/carvin/subpage/decouvrir-carvin','b8869a96-430e-2321-9153-9800b0140dea',200,'a:1:{s:5:\"title\";s:17:\"Découvrir Carvin\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',4,'/sites/carvin/subpage','a0f45d74d2a47e5b42dbb6a7064c507f','d751713988987e9331980363e24189ce','a:0:{}','61a62d762255ded52487546b540f3609'),('0e065eaf-433c-0449-810f-d6363f100705','live',NULL,'/sites/carvin/mairie-24-24/teaser','b48ec991-040c-7b26-4362-fb1c09d43f9c',200,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/mairie-24-24','1e318c9b8d20d92e42bcb6aeb9fdcf9d','d751713988987e9331980363e24189ce','a:0:{}','8807b0aa3bbf37b38f95ed03860ba642'),('10c1bd67-3b87-2d6a-f341-b308be747436','live',NULL,'/sites/carvin/mairie-24-24','856a1543-a00c-7685-b1bd-0ed254285f59',300,'a:1:{s:5:\"title\";s:12:\"Mairie 24/24\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',4,'/sites/carvin','8807b0aa3bbf37b38f95ed03860ba642','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('11be41f9-1399-948c-f0d6-32cb8821a787','live',NULL,'/sites/carvin/subpage/au-service-des-carvinois','547b9467-3c4f-98ba-8133-a97e544fcb00',300,'a:1:{s:5:\"title\";s:24:\"Au service des Carvinois\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',4,'/sites/carvin/subpage','f2dbcc4fc11947bf8f00514bf623f6bc','d751713988987e9331980363e24189ce','a:0:{}','61a62d762255ded52487546b540f3609'),('141b2e17-a87c-42a4-8528-db3402bd1e2b','live',NULL,'/sites/carvin','617bacb9-6650-2783-e3d1-6d5dbe5d89a3',100,'a:4:{s:4:\"name\";s:6:\"Carvin\";s:5:\"title\";s:4:\"Home\";s:5:\"state\";s:1:\"1\";s:23:\"siteResourcesPackageKey\";s:9:\"GC.Carvin\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',2,'/sites','642afa0c19b16ac6544b08240894835f','d751713988987e9331980363e24189ce','a:0:{}','dbd87ae51cbf5240fea77283585e69d5'),('2f200266-deef-7331-15fa-d556de44b94e','user-gcopin',NULL,'/','c5d31507-4bce-328a-799e-89e29d6bb0cd',NULL,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',2,'','6666cd76f96956469e7be39d750cc7d9','d751713988987e9331980363e24189ce','a:0:{}','d41d8cd98f00b204e9800998ecf8427e'),('3c9820a2-4596-11fc-b866-98e51ccd2c84','live',NULL,'/sites/carvin/main','0204a4ef-0329-e625-9ac0-4ea0a34305e5',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin','ed096a85cae03258ee15eb8c0a924508','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('4da2358a-816b-6af8-21bb-5e08ec0ce8df','live',NULL,'/sites/carvin/main/text1','f25f5a0e-d225-01b6-1663-02c8a65c7f80',100,'a:1:{s:4:\"text\";s:28:\"<p>This is the homepages</p>\";}','TYPO3.Neos.NodeTypes:Text',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/main','a43e25b5cb7e87bd54561283663b51b2','d751713988987e9331980363e24189ce','a:0:{}','ed096a85cae03258ee15eb8c0a924508'),('61365e30-6d09-ff6f-a640-9de1d19ffe1c','live',NULL,'/sites/carvin/subpage/au-service-des-carvinois/main','473374e0-d8a2-df9e-ec2d-e417a537cf22',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/subpage/au-service-des-carvinois','1634442e5abc8ff715ab7b5f9b62554e','d751713988987e9331980363e24189ce','a:0:{}','f2dbcc4fc11947bf8f00514bf623f6bc'),('66ed310c-0af5-3dd4-3228-f3d2b1799761','live',NULL,'/sites/carvin/subpage/main','10d1fe1d-dc37-bf82-6a6a-68f424b7873c',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/subpage','8c75b1a553f1c69c951f4dfb7b720a17','d751713988987e9331980363e24189ce','a:0:{}','61a62d762255ded52487546b540f3609'),('6ccd8f10-9425-021a-c2d3-b8e94973171e','live',NULL,'/sites/carvin/subpage/decouvrir-carvin/main','aa9cc4e5-e455-e093-a84c-0ebba4ac804b',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/subpage/decouvrir-carvin','548a10773ce7ea4af7c00e2d24a98e7b','d751713988987e9331980363e24189ce','a:0:{}','a0f45d74d2a47e5b42dbb6a7064c507f'),('70361f02-69d3-63c5-b5a4-02795d65ec6b','live',NULL,'/sites/carvin/subpage/au-service-des-carvinois/teaser','df6291a0-9ec7-c4c4-b536-d36ae65b48a6',200,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/subpage/au-service-des-carvinois','575b3615688099fb56c511e058e47ffa','d751713988987e9331980363e24189ce','a:0:{}','f2dbcc4fc11947bf8f00514bf623f6bc'),('722b323e-36cf-3e02-47fa-a5712090724c','live',NULL,'/sites/carvin/subpage/decouvrir-carvin/teaser','1dd7da0f-d9c6-b774-3ae7-5fb843fba594',200,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/subpage/decouvrir-carvin','9fc8fa08f5aee97864664f254776f3ac','d751713988987e9331980363e24189ce','a:0:{}','a0f45d74d2a47e5b42dbb6a7064c507f'),('7299fac6-1b2e-1dad-35fe-8d53cf98532e','live',NULL,'/sites/carvin/subpage/marie/teaser','05b97cae-1688-5026-c4ff-da8421ca4f5d',200,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/subpage/marie','92b8f4fcca2373b4609cecb3d8b7a524','d751713988987e9331980363e24189ce','a:0:{}','6d82ec1470dddbc86bfc3a1c51a49a10'),('75584932-700c-9787-d66b-023bf75d9f87','live',NULL,'/sites','aacd13e5-767d-4df9-a940-3c1948d28332',100,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',1,'/','dbd87ae51cbf5240fea77283585e69d5','d751713988987e9331980363e24189ce','a:0:{}','6666cd76f96956469e7be39d750cc7d9'),('76655ebb-131c-7d0b-da06-3758bc7abf29','live',NULL,'/','f579692b-e17d-d1e6-f6b9-dd2801dbc72a',NULL,'a:0:{}','unstructured',0,0,NULL,NULL,0,'a:0:{}',2,'','6666cd76f96956469e7be39d750cc7d9','d751713988987e9331980363e24189ce','a:0:{}','d41d8cd98f00b204e9800998ecf8427e'),('8c76f074-b012-b155-dec1-bd99d5cc4b04','live',NULL,'/sites/carvin/subpage/marie','7d3cb8e7-918c-e9b1-8b01-d726e9de6828',250,'a:3:{s:5:\"title\";s:6:\"Mairie\";s:6:\"layout\";s:0:\"\";s:13:\"subpageLayout\";s:0:\"\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',6,'/sites/carvin/subpage','6d82ec1470dddbc86bfc3a1c51a49a10','d751713988987e9331980363e24189ce','a:0:{}','61a62d762255ded52487546b540f3609'),('8cb13bcc-f35b-33ff-a36e-6c8fa0a8a860','live',NULL,'/sites/carvin/vie-associative','45cb4114-cbd8-a861-59c0-0691a1c0d0a5',250,'a:1:{s:5:\"title\";s:15:\"Vie associative\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',4,'/sites/carvin','96d0fa1d3d6aa9ad8c19d3e700d54889','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('977fe8d8-a1c8-97b7-9003-33799b6f4fc0','live',NULL,'/sites/carvin/subpage/main/text1','30767fe2-c0e2-632a-3612-a420efa1cf4f',100,'a:1:{s:4:\"text\";s:33:\"<p>This is the first sub page</p>\";}','TYPO3.Neos.NodeTypes:Text',0,0,NULL,NULL,0,'a:0:{}',2,'/sites/carvin/subpage/main','e86ef07817b964a15742d4b0cb33463d','d751713988987e9331980363e24189ce','a:0:{}','8c75b1a553f1c69c951f4dfb7b720a17'),('b8463622-d6df-37ee-f15c-c04924e32be1','live',NULL,'/sites/carvin/subpage/marie/main','1fa35a3b-1a6c-04f1-3a79-c747d703bf47',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/subpage/marie','0e6adca07da1738a254103baaabf7b1c','d751713988987e9331980363e24189ce','a:0:{}','6d82ec1470dddbc86bfc3a1c51a49a10'),('bcf300f5-1ede-3723-47a0-d54d9495c4f1','live',NULL,'/sites/carvin/vie-associative/main','0fdc08d5-f688-2828-ff7f-3a5599a10507',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/vie-associative','2e918c324632950027d4795df8d72454','d751713988987e9331980363e24189ce','a:0:{}','96d0fa1d3d6aa9ad8c19d3e700d54889'),('c05cd7a5-5bed-4a1f-7cc2-010ce6c44a72','live',NULL,'/sites/carvin/subpage','5d409e7e-8bc0-b2d7-bc29-7e60b566e547',200,'a:1:{s:5:\"title\";s:9:\"Carvin fr\";}','TYPO3.Neos.NodeTypes:Page',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin','61a62d762255ded52487546b540f3609','d751713988987e9331980363e24189ce','a:0:{}','642afa0c19b16ac6544b08240894835f'),('de3fba94-55d9-f070-9868-62ae9a785491','live',NULL,'/sites/carvin/vie-associative/teaser','d8c077b4-874e-49b9-84e0-ddaf8012f0c4',200,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/vie-associative','54d441e1fb5a6471800295a241f2dce1','d751713988987e9331980363e24189ce','a:0:{}','96d0fa1d3d6aa9ad8c19d3e700d54889'),('ef235ad0-97a9-6e4f-be65-d1ef5c9a583c','live',NULL,'/sites/carvin/mairie-24-24/main','fba5cbe3-fb5c-b9c7-eff2-92f621f70e24',100,'a:0:{}','TYPO3.Neos:ContentCollection',0,0,NULL,NULL,0,'a:0:{}',3,'/sites/carvin/mairie-24-24','2c41e1ef50641473f9b9a26d0106a6b3','d751713988987e9331980363e24189ce','a:0:{}','8807b0aa3bbf37b38f95ed03860ba642');
 /*!40000 ALTER TABLE `typo3_typo3cr_domain_model_nodedata` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -841,8 +837,8 @@ CREATE TABLE `typo3_typo3cr_domain_model_workspace` (
   PRIMARY KEY (`name`),
   KEY `IDX_71DE9CFBE9BFE681` (`baseworkspace`),
   KEY `IDX_71DE9CFBBB46155` (`rootnodedata`),
-  CONSTRAINT `FK_71DE9CFBBB46155` FOREIGN KEY (`rootnodedata`) REFERENCES `typo3_typo3cr_domain_model_nodedata` (`persistence_object_identifier`),
-  CONSTRAINT `FK_71DE9CFBE9BFE681` FOREIGN KEY (`baseworkspace`) REFERENCES `typo3_typo3cr_domain_model_workspace` (`name`) ON DELETE SET NULL
+  CONSTRAINT `FK_71DE9CFBE9BFE681` FOREIGN KEY (`baseworkspace`) REFERENCES `typo3_typo3cr_domain_model_workspace` (`name`) ON DELETE SET NULL,
+  CONSTRAINT `FK_71DE9CFBBB46155` FOREIGN KEY (`rootnodedata`) REFERENCES `typo3_typo3cr_domain_model_nodedata` (`persistence_object_identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -852,7 +848,7 @@ CREATE TABLE `typo3_typo3cr_domain_model_workspace` (
 
 LOCK TABLES `typo3_typo3cr_domain_model_workspace` WRITE;
 /*!40000 ALTER TABLE `typo3_typo3cr_domain_model_workspace` DISABLE KEYS */;
-INSERT INTO `typo3_typo3cr_domain_model_workspace` VALUES (NULL,'9d486d0c-3aeb-6e3b-fa14-ed990241c6cb','live'),('live','6d3ea6c2-4074-c753-2d37-3ce9222b6e4d','user-gcopin');
+INSERT INTO `typo3_typo3cr_domain_model_workspace` VALUES (NULL,'76655ebb-131c-7d0b-da06-3758bc7abf29','live'),('live','2f200266-deef-7331-15fa-d556de44b94e','user-gcopin');
 /*!40000 ALTER TABLE `typo3_typo3cr_domain_model_workspace` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -890,4 +886,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-09 16:17:09
+-- Dump completed on 2014-12-15 18:44:41

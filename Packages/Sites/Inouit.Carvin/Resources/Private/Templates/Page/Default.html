@@ -3,54 +3,9 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <html>
 <head>
-	<f:section name="stylesheets">
-		<link rel="stylesheet" href="{f:uri.resource(path: 'css/main.css', package: 'Inouit.Carvin')}" media="all" />
-	</f:section>
-	<f:section name="headScripts">
-		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
-	</f:section>
 </head>
 <body>
 <f:section name="body">
-	<!--Header-->
-	<div id="sites" class="nav">
-	  <f:cObject typoscriptObjectPath="menu.site" />
-	</div>
-
-	<div id="header" class="header">
-	  <div class="page">
-	   <!--Header-->
-	   <f:cObject typoscriptObjectPath="lib.logo" />
-
-	   <!--mainNav-->
-	   <f:cObject typoscriptObjectPath="menu.main" />
-	 </div>
-	</div>
-
-	<!--Content-->
-	<f:render section="mainContent" />
-
-	<!--Footer-->
-	<div id="footer" class="footer">
-	  <div class="page">
-	    <!--bottomNav-->
-	    <f:cObject typoscriptObjectPath="menu.bottom" />
-	  </div>
-	</div>
-
-
-	<nav class="menu">
-		{parts.menu -> f:format.raw()}
-	</nav>
-	<nav class="breadcrumb">
-		{parts.breadcrumb -> f:format.raw()}
-	</nav>
-	<div class="content">
-		{content.main -> f:format.raw()}
-	</div>
-</f:section>
-<f:section name="bodyScripts">
-	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by TypoScript -->
 </f:section>
 </body>
 </html>

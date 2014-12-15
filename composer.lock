@@ -1,8 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
-        "This file is @generated automatically"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
     "hash": "85c0910fa84e3c10b5e5b0ad8ac68783",
     "packages": [
@@ -1330,7 +1329,6 @@
     "stability-flags": {
         "flowpack/behat": 20
     },
-    "prefer-stable": false,
     "platform": [],
     "platform-dev": []
 }

@@ -430,10 +430,10 @@
       'Fluid' => 
       array (
       ),
-      'Party' => 
+      'Eel' => 
       array (
       ),
-      'Eel' => 
+      'Party' => 
       array (
       ),
       'TYPO3CR' => 
@@ -1423,6 +1423,12 @@
       array (
       ),
     ),
+    'Inouit' => 
+    array (
+      'Carvin' => 
+      array (
+      ),
+    ),
   ),
   'Caches' => 
   array (
@@ -1569,6 +1575,130 @@
     array (
       'frontend' => 'TYPO3\\Flow\\Cache\\Frontend\\VariableFrontend',
       'backend' => 'TYPO3\\Flow\\Cache\\Backend\\FileBackend',
+    ),
+  ),
+  'Policy' => 
+  array (
+    'resources' => 
+    array (
+      'entities' => 
+      array (
+        'TYPO3\\TYPO3CR\\Domain\\Model\\Node' => 
+        array (
+          'TYPO3_TYPO3CR_Domain_Model_Node_NotInLiveWorkspace' => 'this.workspace.name != \'live\'',
+        ),
+      ),
+      'methods' => 
+      array (
+        'TYPO3_Media_ManageAssets' => 'method(TYPO3\\Media\\Controller\\AssetController->(index|new|edit|update|initializeCreate|create|initializeUpload|upload|tagAsset|delete|createTag|deleteTag)Action())',
+        'TYPO3_Setup_LoginController' => 'method(TYPO3\\Setup\\Controller\\LoginController->(login|authenticate)Action())',
+        'TYPO3_Setup_SetupController' => 'method(TYPO3\\Setup\\Controller\\SetupController->indexAction()) || method(TYPO3\\Setup\\Controller\\LoginController->logoutAction())',
+        'TYPO3_Setup_WidgetControllers' => 'method(public TYPO3\\Setup\\ViewHelpers\\Widget\\Controller\\.+Controller->.+Action())',
+        'TYPO3_Neos_AllControllerActions' => 'within(TYPO3\\Flow\\Mvc\\Controller\\AbstractController) && method(public .*->(?!initialize).*Action())',
+        'TYPO3_Neos_WidgetControllers' => 'method(TYPO3\\Fluid\\ViewHelpers\\Widget\\Controller\\AutocompleteController->(index|autocomplete)Action()) || method(TYPO3\\Fluid\\ViewHelpers\\Widget\\Controller\\PaginateController->indexAction()) || method(TYPO3\\TYPO3CR\\ViewHelpers\\Widget\\Controller\\PaginateController->indexAction()) || method(TYPO3\\Neos\\ViewHelpers\\Widget\\Controller\\LinkRepositoryController->(index|search|lookup)Action())',
+        'TYPO3_Neos_PublicFrontendAccess' => 'method(TYPO3\\Neos\\Controller\\Frontend\\NodeController->showAction())',
+        'TYPO3_Neos_BackendLogin' => 'method(TYPO3\\Neos\\Controller\\LoginController->(index|authenticate)Action()) || method(TYPO3\\Flow\\Security\\Authentication\\Controller\\AbstractAuthenticationController->authenticateAction())',
+        'TYPO3_Neos_Backend_GeneralAccess' => 'method(TYPO3\\Neos\\Controller\\Backend\\BackendController->indexAction()) || method(TYPO3\\Neos\\Controller\\Backend\\ModuleController->indexAction()) || method(TYPO3\\Neos\\Controller\\LoginController->logoutAction()) || method(TYPO3\\Flow\\Security\\Authentication\\Controller\\AbstractAuthenticationController->logoutAction()) || method(TYPO3\\Neos\\Controller\\Module\\AbstractModuleController->indexAction())',
+        'TYPO3_Neos_Backend_Module_Content' => 'method(TYPO3\\Neos\\Controller\\Backend\\SchemaController->(nodeTypeSchema|vieSchema)Action()) || method(TYPO3\\Neos\\Controller\\Backend\\MenuController->indexAction()) || method(TYPO3\\Neos\\Controller\\Backend\\SettingsController->editPreviewAction())',
+        'TYPO3_Neos_Backend_EditContent' => 'method(TYPO3\\Neos\\Service\\Controller\\NodeController->(show|getPrimaryChildNode|getChildNodesForTree|filterChildNodesForTree|getChildNodes|getChildNodesFromParent|create|createAndRender|createNodeForTheTree|move|moveBefore|moveAfter|moveInto|copy|copyBefore|copyAfter|copyInto|update|delete|searchPage|getPageByNodePath|error)Action()) || method(TYPO3\\Neos\\Controller\\Backend\\ContentController->(uploadAsset|assetsWithMetadata|imageWithMetadata|pluginViews|masterPlugins|error)Action()) || method(TYPO3\\Neos\\Service\\Controller\\AssetController->(index|show|error)Action()) || method(TYPO3\\Neos\\Controller\\Service\\NodeController->(index|show|error)Action()) || method(TYPO3\\Neos\\Controller\\Backend\\(Media|Image)BrowserController->(initialize|index|new|edit|update|initializeCreate|create|initializeUpload|upload|tagAsset|delete|createTag|deleteTag|error)Action())',
+        'TYPO3_Neos_Backend_AccessContentInOwnOrLiveWorkspace' => 'method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName == current.userInformation.currentWorkspaceName)) || method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName == "live"))',
+        'TYPO3_Neos_Backend_AccessContentInOthersWorkspace' => 'method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName != current.userInformation.currentWorkspaceName)) && method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName != "live"))',
+        'TYPO3_Neos_Backend_PublishOwnWorkspaceContent' => 'method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->(publishNode|publishNodes|error)Action()) || method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->publishAllAction(workspaceName = current.userInformation.currentWorkspaceName)) || method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->getWorkspaceWideUnpublishedNodesAction(workspace.name = current.userInformation.currentWorkspaceName))',
+        'TYPO3_Neos_Backend_DiscardOwnWorkspaceContent' => 'method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->(discardNode|discardNodes|error)Action()) || method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->discardAllAction(workspace.name == current.userInformation.currentWorkspaceName))',
+        'TYPO3_Neos_Backend_Module_User' => 'method(TYPO3\\Neos\\Controller\\Module\\UserController->indexAction())',
+        'TYPO3_Neos_Backend_Module_User_UserSettings' => 'method(TYPO3\\Neos\\Controller\\Module\\User\\UserSettingsController->(index|newElectronicAddress|createElectronicAddress|deleteElectronicAddress)Action())',
+        'TYPO3_Neos_Backend_Module_User_UserSettings_UpdateOwnSettings' => 'method(TYPO3\\Neos\\Controller\\Module\\User\\UserSettingsController->updateAction(account == current.securityContext.account)) && method(TYPO3\\Neos\\Controller\\Module\\User\\UserSettingsController->updateAction(person == current.securityContext.party))',
+        'TYPO3_Neos_Backend_EditUserPreferences' => 'method(TYPO3\\Neos\\Service\\Controller\\UserPreferenceController->(index|update|error)Action())',
+        'TYPO3_Neos_Backend_Module_Management' => 'method(TYPO3\\Neos\\Controller\\Module\\ManagementController->indexAction())',
+        'TYPO3_Neos_Backend_Module_Management_Workspaces' => 'method(TYPO3\\Neos\\Controller\\Module\\Management\\WorkspacesController->(publishNode|discardNode|publishOrDiscardNodes)Action())',
+        'TYPO3_Neos_Backend_Module_Management_Workspaces_ManageOwnWorkspace' => 'method(TYPO3\\Neos\\Controller\\Module\\Management\\WorkspacesController->(index|publishWorkspace|discardWorkspace)Action(workspace.name == current.userInformation.currentWorkspaceName)) || method(TYPO3\\Neos\\Controller\\Module\\Management\\WorkspacesController->(index|publishWorkspace|discardWorkspace)Action(workspace == NULL))',
+        'TYPO3_Neos_Backend_Module_Media_ManageAssets' => 'method(TYPO3\\Neos\\Controller\\Module\\Management\\AssetController->(index|new|edit|update|initializeCreate|create|initializeUpload|upload|tagAsset|delete|createTag|deleteTag)Action())',
+        'TYPO3_Neos_Backend_Module_Administration' => 'method(TYPO3\\Neos\\Controller\\Module\\AdministrationController->indexAction())',
+        'TYPO3_Neos_Backend_Module_Administration_Users' => 'method(TYPO3\\Neos\\Controller\\Module\\Administration\\UsersController->(index|show|new|create|edit|update|delete|newElectronicAddress|createElectronicAddress|deleteElectronicAddress|)Action())',
+        'TYPO3_Neos_Backend_Module_Administration_Packages' => 'method(TYPO3\\Neos\\Controller\\Module\\Administration\\PackagesController->(index|activate|deactivate|delete|freeze|unfreeze|batch)Action())',
+        'TYPO3_Neos_Backend_Module_Administration_Sites' => 'method(TYPO3\\Neos\\Controller\\Module\\Administration\\SitesController->(index|edit|updateSite|newSite|createSite|deleteSite|activateSite|deactivateSite|editDomain|updateDomain|newDomain|createDomain|deleteDomain|activateDomain|deactivateDomain)Action())',
+        'TYPO3_NeosDemoTypo3Org_RegistrationAccess' => 'method(TYPO3\\NeosDemoTypo3Org\\Controller\\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())',
+        'TYPO3_NeosDemoTypo3Org_FlickrAccess' => 'method(TYPO3\\NeosDemoTypo3Org\\Controller\\FlickrController->(tagStream|userStream)Action())',
+      ),
+    ),
+    'roles' => 
+    array (
+      'TYPO3.TYPO3CR:Administrator' => 
+      array (
+      ),
+      'TYPO3.Setup:Administrator' => 
+      array (
+      ),
+      'TYPO3.Neos:Editor' => 
+      array (
+        0 => 'TYPO3.TYPO3CR:Administrator',
+      ),
+      'TYPO3.Neos:Administrator' => 
+      array (
+        0 => 'TYPO3.Neos:Editor',
+      ),
+    ),
+    'acls' => 
+    array (
+      'TYPO3.TYPO3CR:Administrator' => 
+      array (
+        'entities' => 
+        array (
+          'TYPO3_TYPO3CR_Domain_Model_Node_NotInLiveWorkspace' => 'GRANT',
+        ),
+      ),
+      'Everybody' => 
+      array (
+        'methods' => 
+        array (
+          'TYPO3_Setup_LoginController' => 'GRANT',
+          'TYPO3_Neos_PublicFrontendAccess' => 'GRANT',
+          'TYPO3_Neos_Backend_AccessContentInOthersWorkspace' => 'DENY',
+          'TYPO3_Neos_Backend_AccessContentInOwnOrLiveWorkspace' => 'GRANT',
+          'TYPO3_Neos_BackendLogin' => 'GRANT',
+          'TYPO3_Neos_WidgetControllers' => 'GRANT',
+          'TYPO3_NeosDemoTypo3Org_RegistrationAccess' => 'GRANT',
+          'TYPO3_NeosDemoTypo3Org_FlickrAccess' => 'GRANT',
+        ),
+      ),
+      'TYPO3.Setup:Administrator' => 
+      array (
+        'methods' => 
+        array (
+          'TYPO3_Setup_SetupController' => 'GRANT',
+          'TYPO3_Setup_WidgetControllers' => 'GRANT',
+        ),
+      ),
+      'TYPO3.Neos:Editor' => 
+      array (
+        'methods' => 
+        array (
+          'TYPO3_Neos_Backend_GeneralAccess' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Content' => 'GRANT',
+          'TYPO3_Neos_Backend_EditContent' => 'GRANT',
+          'TYPO3_Neos_Backend_PublishOwnWorkspaceContent' => 'GRANT',
+          'TYPO3_Neos_Backend_DiscardOwnWorkspaceContent' => 'GRANT',
+          'TYPO3_Media_ManageAssets' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Media_ManageAssets' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_User' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_User_UserSettings' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_User_UserSettings_UpdateOwnSettings' => 'GRANT',
+          'TYPO3_Neos_Backend_EditUserPreferences' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Management' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Management_Workspaces' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Management_Workspaces_ManageOwnWorkspace' => 'GRANT',
+        ),
+      ),
+      'TYPO3.Neos:Administrator' => 
+      array (
+        'methods' => 
+        array (
+          'TYPO3_Neos_Backend_Module_Administration' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Administration_Users' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Administration_Packages' => 'GRANT',
+          'TYPO3_Neos_Backend_Module_Administration_Sites' => 'GRANT',
+        ),
+      ),
     ),
   ),
   'Routes' => 
@@ -2311,130 +2441,6 @@
         ),
       ),
       'appendExceedingArguments' => true,
-    ),
-  ),
-  'Policy' => 
-  array (
-    'resources' => 
-    array (
-      'entities' => 
-      array (
-        'TYPO3\\TYPO3CR\\Domain\\Model\\Node' => 
-        array (
-          'TYPO3_TYPO3CR_Domain_Model_Node_NotInLiveWorkspace' => 'this.workspace.name != \'live\'',
-        ),
-      ),
-      'methods' => 
-      array (
-        'TYPO3_Media_ManageAssets' => 'method(TYPO3\\Media\\Controller\\AssetController->(index|new|edit|update|initializeCreate|create|initializeUpload|upload|tagAsset|delete|createTag|deleteTag)Action())',
-        'TYPO3_Setup_LoginController' => 'method(TYPO3\\Setup\\Controller\\LoginController->(login|authenticate)Action())',
-        'TYPO3_Setup_SetupController' => 'method(TYPO3\\Setup\\Controller\\SetupController->indexAction()) || method(TYPO3\\Setup\\Controller\\LoginController->logoutAction())',
-        'TYPO3_Setup_WidgetControllers' => 'method(public TYPO3\\Setup\\ViewHelpers\\Widget\\Controller\\.+Controller->.+Action())',
-        'TYPO3_Neos_AllControllerActions' => 'within(TYPO3\\Flow\\Mvc\\Controller\\AbstractController) && method(public .*->(?!initialize).*Action())',
-        'TYPO3_Neos_WidgetControllers' => 'method(TYPO3\\Fluid\\ViewHelpers\\Widget\\Controller\\AutocompleteController->(index|autocomplete)Action()) || method(TYPO3\\Fluid\\ViewHelpers\\Widget\\Controller\\PaginateController->indexAction()) || method(TYPO3\\TYPO3CR\\ViewHelpers\\Widget\\Controller\\PaginateController->indexAction()) || method(TYPO3\\Neos\\ViewHelpers\\Widget\\Controller\\LinkRepositoryController->(index|search|lookup)Action())',
-        'TYPO3_Neos_PublicFrontendAccess' => 'method(TYPO3\\Neos\\Controller\\Frontend\\NodeController->showAction())',
-        'TYPO3_Neos_BackendLogin' => 'method(TYPO3\\Neos\\Controller\\LoginController->(index|authenticate)Action()) || method(TYPO3\\Flow\\Security\\Authentication\\Controller\\AbstractAuthenticationController->authenticateAction())',
-        'TYPO3_Neos_Backend_GeneralAccess' => 'method(TYPO3\\Neos\\Controller\\Backend\\BackendController->indexAction()) || method(TYPO3\\Neos\\Controller\\Backend\\ModuleController->indexAction()) || method(TYPO3\\Neos\\Controller\\LoginController->logoutAction()) || method(TYPO3\\Flow\\Security\\Authentication\\Controller\\AbstractAuthenticationController->logoutAction()) || method(TYPO3\\Neos\\Controller\\Module\\AbstractModuleController->indexAction())',
-        'TYPO3_Neos_Backend_Module_Content' => 'method(TYPO3\\Neos\\Controller\\Backend\\SchemaController->(nodeTypeSchema|vieSchema)Action()) || method(TYPO3\\Neos\\Controller\\Backend\\MenuController->indexAction()) || method(TYPO3\\Neos\\Controller\\Backend\\SettingsController->editPreviewAction())',
-        'TYPO3_Neos_Backend_EditContent' => 'method(TYPO3\\Neos\\Service\\Controller\\NodeController->(show|getPrimaryChildNode|getChildNodesForTree|filterChildNodesForTree|getChildNodes|getChildNodesFromParent|create|createAndRender|createNodeForTheTree|move|moveBefore|moveAfter|moveInto|copy|copyBefore|copyAfter|copyInto|update|delete|searchPage|getPageByNodePath|error)Action()) || method(TYPO3\\Neos\\Controller\\Backend\\ContentController->(uploadAsset|assetsWithMetadata|imageWithMetadata|pluginViews|masterPlugins|error)Action()) || method(TYPO3\\Neos\\Service\\Controller\\AssetController->(index|show|error)Action()) || method(TYPO3\\Neos\\Controller\\Service\\NodeController->(index|show|error)Action()) || method(TYPO3\\Neos\\Controller\\Backend\\(Media|Image)BrowserController->(initialize|index|new|edit|update|initializeCreate|create|initializeUpload|upload|tagAsset|delete|createTag|deleteTag|error)Action())',
-        'TYPO3_Neos_Backend_AccessContentInOwnOrLiveWorkspace' => 'method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName == current.userInformation.currentWorkspaceName)) || method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName == "live"))',
-        'TYPO3_Neos_Backend_AccessContentInOthersWorkspace' => 'method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName != current.userInformation.currentWorkspaceName)) && method(TYPO3\\Neos\\TypeConverter\\NodeConverter->createNode(workspaceName != "live"))',
-        'TYPO3_Neos_Backend_PublishOwnWorkspaceContent' => 'method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->(publishNode|publishNodes|error)Action()) || method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->publishAllAction(workspaceName = current.userInformation.currentWorkspaceName)) || method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->getWorkspaceWideUnpublishedNodesAction(workspace.name = current.userInformation.currentWorkspaceName))',
-        'TYPO3_Neos_Backend_DiscardOwnWorkspaceContent' => 'method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->(discardNode|discardNodes|error)Action()) || method(TYPO3\\Neos\\Service\\Controller\\WorkspaceController->discardAllAction(workspace.name == current.userInformation.currentWorkspaceName))',
-        'TYPO3_Neos_Backend_Module_User' => 'method(TYPO3\\Neos\\Controller\\Module\\UserController->indexAction())',
-        'TYPO3_Neos_Backend_Module_User_UserSettings' => 'method(TYPO3\\Neos\\Controller\\Module\\User\\UserSettingsController->(index|newElectronicAddress|createElectronicAddress|deleteElectronicAddress)Action())',
-        'TYPO3_Neos_Backend_Module_User_UserSettings_UpdateOwnSettings' => 'method(TYPO3\\Neos\\Controller\\Module\\User\\UserSettingsController->updateAction(account == current.securityContext.account)) && method(TYPO3\\Neos\\Controller\\Module\\User\\UserSettingsController->updateAction(person == current.securityContext.party))',
-        'TYPO3_Neos_Backend_EditUserPreferences' => 'method(TYPO3\\Neos\\Service\\Controller\\UserPreferenceController->(index|update|error)Action())',
-        'TYPO3_Neos_Backend_Module_Management' => 'method(TYPO3\\Neos\\Controller\\Module\\ManagementController->indexAction())',
-        'TYPO3_Neos_Backend_Module_Management_Workspaces' => 'method(TYPO3\\Neos\\Controller\\Module\\Management\\WorkspacesController->(publishNode|discardNode|publishOrDiscardNodes)Action())',
-        'TYPO3_Neos_Backend_Module_Management_Workspaces_ManageOwnWorkspace' => 'method(TYPO3\\Neos\\Controller\\Module\\Management\\WorkspacesController->(index|publishWorkspace|discardWorkspace)Action(workspace.name == current.userInformation.currentWorkspaceName)) || method(TYPO3\\Neos\\Controller\\Module\\Management\\WorkspacesController->(index|publishWorkspace|discardWorkspace)Action(workspace == NULL))',
-        'TYPO3_Neos_Backend_Module_Media_ManageAssets' => 'method(TYPO3\\Neos\\Controller\\Module\\Management\\AssetController->(index|new|edit|update|initializeCreate|create|initializeUpload|upload|tagAsset|delete|createTag|deleteTag)Action())',
-        'TYPO3_Neos_Backend_Module_Administration' => 'method(TYPO3\\Neos\\Controller\\Module\\AdministrationController->indexAction())',
-        'TYPO3_Neos_Backend_Module_Administration_Users' => 'method(TYPO3\\Neos\\Controller\\Module\\Administration\\UsersController->(index|show|new|create|edit|update|delete|newElectronicAddress|createElectronicAddress|deleteElectronicAddress|)Action())',
-        'TYPO3_Neos_Backend_Module_Administration_Packages' => 'method(TYPO3\\Neos\\Controller\\Module\\Administration\\PackagesController->(index|activate|deactivate|delete|freeze|unfreeze|batch)Action())',
-        'TYPO3_Neos_Backend_Module_Administration_Sites' => 'method(TYPO3\\Neos\\Controller\\Module\\Administration\\SitesController->(index|edit|updateSite|newSite|createSite|deleteSite|activateSite|deactivateSite|editDomain|updateDomain|newDomain|createDomain|deleteDomain|activateDomain|deactivateDomain)Action())',
-        'TYPO3_NeosDemoTypo3Org_RegistrationAccess' => 'method(TYPO3\\NeosDemoTypo3Org\\Controller\\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())',
-        'TYPO3_NeosDemoTypo3Org_FlickrAccess' => 'method(TYPO3\\NeosDemoTypo3Org\\Controller\\FlickrController->(tagStream|userStream)Action())',
-      ),
-    ),
-    'roles' => 
-    array (
-      'TYPO3.TYPO3CR:Administrator' => 
-      array (
-      ),
-      'TYPO3.Setup:Administrator' => 
-      array (
-      ),
-      'TYPO3.Neos:Editor' => 
-      array (
-        0 => 'TYPO3.TYPO3CR:Administrator',
-      ),
-      'TYPO3.Neos:Administrator' => 
-      array (
-        0 => 'TYPO3.Neos:Editor',
-      ),
-    ),
-    'acls' => 
-    array (
-      'TYPO3.TYPO3CR:Administrator' => 
-      array (
-        'entities' => 
-        array (
-          'TYPO3_TYPO3CR_Domain_Model_Node_NotInLiveWorkspace' => 'GRANT',
-        ),
-      ),
-      'Everybody' => 
-      array (
-        'methods' => 
-        array (
-          'TYPO3_Setup_LoginController' => 'GRANT',
-          'TYPO3_Neos_PublicFrontendAccess' => 'GRANT',
-          'TYPO3_Neos_Backend_AccessContentInOthersWorkspace' => 'DENY',
-          'TYPO3_Neos_Backend_AccessContentInOwnOrLiveWorkspace' => 'GRANT',
-          'TYPO3_Neos_BackendLogin' => 'GRANT',
-          'TYPO3_Neos_WidgetControllers' => 'GRANT',
-          'TYPO3_NeosDemoTypo3Org_RegistrationAccess' => 'GRANT',
-          'TYPO3_NeosDemoTypo3Org_FlickrAccess' => 'GRANT',
-        ),
-      ),
-      'TYPO3.Setup:Administrator' => 
-      array (
-        'methods' => 
-        array (
-          'TYPO3_Setup_SetupController' => 'GRANT',
-          'TYPO3_Setup_WidgetControllers' => 'GRANT',
-        ),
-      ),
-      'TYPO3.Neos:Editor' => 
-      array (
-        'methods' => 
-        array (
-          'TYPO3_Neos_Backend_GeneralAccess' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Content' => 'GRANT',
-          'TYPO3_Neos_Backend_EditContent' => 'GRANT',
-          'TYPO3_Neos_Backend_PublishOwnWorkspaceContent' => 'GRANT',
-          'TYPO3_Neos_Backend_DiscardOwnWorkspaceContent' => 'GRANT',
-          'TYPO3_Media_ManageAssets' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Media_ManageAssets' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_User' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_User_UserSettings' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_User_UserSettings_UpdateOwnSettings' => 'GRANT',
-          'TYPO3_Neos_Backend_EditUserPreferences' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Management' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Management_Workspaces' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Management_Workspaces_ManageOwnWorkspace' => 'GRANT',
-        ),
-      ),
-      'TYPO3.Neos:Administrator' => 
-      array (
-        'methods' => 
-        array (
-          'TYPO3_Neos_Backend_Module_Administration' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Administration_Users' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Administration_Packages' => 'GRANT',
-          'TYPO3_Neos_Backend_Module_Administration_Sites' => 'GRANT',
-        ),
-      ),
     ),
   ),
   'NodeTypes' => 
@@ -3998,47 +4004,6 @@
         'group' => 'plugins',
         'icon' => 'icon-picture',
         'inlineEditable' => true,
-      ),
-    ),
-  ),
-  'Views' => 
-  array (
-    0 => 
-    array (
-      'requestFilter' => 'parentRequest.isPackage("TYPO3.Neos") && (isPackage("TYPO3.Neos") && isController("Module\\Management\\Asset")) || (isPackage("TYPO3.Media") && isController("Asset"))',
-      'options' => 
-      array (
-        'layoutRootPaths' => 
-        array (
-          'TYPO3.Neos' => 'resource://TYPO3.Neos/Private/Layouts/Media',
-          'TYPO3.Media' => 'resource://TYPO3.Media/Private/Layouts',
-        ),
-        'partialRootPaths' => 
-        array (
-          'TYPO3.Neos' => 'resource://TYPO3.Neos/Private/Partials/Media',
-          'TYPO3.Media' => 'resource://TYPO3.Media/Private/Partials',
-        ),
-        'templateRootPathPattern' => 'resource://TYPO3.Media/Private/Templates',
-        'templatePathAndFilenamePattern' => '@templateRoot/Asset/@action.@format',
-      ),
-    ),
-    1 => 
-    array (
-      'requestFilter' => 'isPackage("TYPO3.Neos") && (isController("Backend\\MediaBrowser") || isController("Backend\\ImageBrowser"))',
-      'options' => 
-      array (
-        'layoutRootPaths' => 
-        array (
-          'TYPO3.Media' => 'resource://TYPO3.Media/Private/Layouts',
-          'TYPO3.Neos' => 'resource://TYPO3.Neos/Private/Layouts/Media',
-        ),
-        'partialRootPaths' => 
-        array (
-          'TYPO3.Media' => 'resource://TYPO3.Media/Private/Partials',
-          'TYPO3.Neos' => 'resource://TYPO3.Neos/Private/Partials/Media',
-        ),
-        'templateRootPathPattern' => 'resource://TYPO3.Media/Private/Templates',
-        'templatePathAndFilenamePattern' => '@templateRoot/@subpackage/Asset/@action.@format',
       ),
     ),
   ),

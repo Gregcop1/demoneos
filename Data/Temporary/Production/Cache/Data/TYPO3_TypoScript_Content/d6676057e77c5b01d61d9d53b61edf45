@@ -21,7 +21,7 @@
 	</div>
 
 	<!-- Put your scripts inclusions for the end of the body here, they will be included in your website by TypoScript -->
-eval=page<TYPO3.Neos:Page>/neosBackendContainer{"node":{"type":"TYPO3\\TYPO3CR\\Domain\\Model\\Node","value":"\/sites\/carvin@user-gcopin"}}<script data-neos-node="b2482f69-ea5c-326c-36c1-975dc392843f" src="http://demoneos.local.inouit.com/_Resources/Static/Packages/TYPO3.Neos/JavaScript/LastVisitedNode.js"></script>
+eval=page<TYPO3.Neos:Page>/neosBackendContainer{"node":{"type":"TYPO3\\TYPO3CR\\Domain\\Model\\Node","value":"\/sites\/carvin@user-gcopin"}}<script data-neos-node="617bacb9-6650-2783-e3d1-6d5dbe5d89a3" src="http://demoneos.local.inouit.com/_Resources/Static/Packages/TYPO3.Neos/JavaScript/LastVisitedNode.js"></script>
 
 	
 		<script src="http://demoneos.local.inouit.com/_Resources/Static/Packages/TYPO3.Neos/Library/requirejs/require.js"></script>
@@ -30,4 +30,4 @@
 			
 	
 
-</body></html>0             Node_b2482f69-ea5c-326c-36c1-975dc392843f2982      
+</body></html>0             Node_617bacb9-6650-2783-e3d1-6d5dbe5d89a32982      

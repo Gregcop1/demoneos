@@ -260,6 +260,14 @@ return array (
       'manifestPath' => '',
       'composerName' => 'inouit/carvin',
     ),
+    'GC.Carvin' => 
+    array (
+      'state' => 'active',
+      'packagePath' => 'Sites/GC.Carvin/',
+      'classesPath' => 'Classes/',
+      'manifestPath' => '',
+      'composerName' => 'gc/carvin',
+    ),
   ),
   'version' => 4,
 );

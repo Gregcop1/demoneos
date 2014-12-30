@@ -1,0 +1,51 @@
+.tx-powermail {
+    fieldset { border: 0; }
+    .powermail_fieldwrap { clear: both; display: block; position: relative; margin: 10px auto; }
+
+    legend { display: none; }
+
+    .powermail_fieldwrap_radio legend,
+    .powermail_fieldwrap_check legend,
+    .powermail_all_label,
+    label { @include inline-block; width: 15%; padding: 4px 1%; vertical-align: middle;
+        font-size: 1.5em; line-height: 1.3em; font-weight: $bold; text-align: right; }
+    .powermail_all_value { @include inline-block; width: 70%; vertical-align: middle;
+        font-size: 1.5em; line-height: 1.3em; }
+
+    .powermail_fieldwrap_radio legend,
+    .powermail_fieldwrap_check legend { float: left; }
+    .powermail_radio_outer,
+    .powermail_check_outer  { @include inline-block; width: 75%; vertical-align: middle; }
+    .powermail_radio_outer label,
+    .powermail_check_outer label { width: 90%; text-align: left; }
+    .powermail_fieldwrap_textarea label { vertical-align: top; }
+
+    .powermail_mandatory { margin-left: 5px; }
+    input, select, textarea { vertical-align: middle; }
+    textarea { height: 80px; }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"],
+    select,
+    textarea { position: relative; padding: 4px 1%; width: 70%; border: 1px solid $black1; background-color: $white; 
+        font-size: 1.7em; line-height: 1.4em; }
+    select { width: auto;  cursor: pointer; }
+    input[type="submit"] { margin-left: 17.5%; width: auto; cursor: pointer; background-color: $outlineBlue; border: 0;
+        font-size: 1.5em; font-family: $font; font-weight: $bold; color: $white; text-transform: uppercase; }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    textarea:focus { outline: 0; }
+    input[type="text"].invalid,
+    input[type="email"].invalid,
+    input[type="password"].invalid,
+    textarea.invalid { box-shadow: 0 0 3px $errorRed; }
+
+    .formError {
+        padding: 5px; height:auto; background-color: $errorRed; z-index:10; color: $white;
+        .formErrorContent { margin: 0; padding: 0; font-weight: bold; }
+        .formErrorArrow { display:block; position: absolute; bottom: -10px; left: 5px; width: 0; height: 0; border: 10px solid; border-bottom: 0 none; border-color: $errorRed transparent transparent; }
+    }
+}

@@ -1,1 +1,0 @@
-a:2:{i:5;a:1:{i:0;O:28:"TYPO3\Flow\Annotations\Scope":1:{s:5:"value";s:9:"singleton";}}i:8;a:1:{s:8:"getLabel";a:2:{i:12;i:3;i:13;a:2:{s:8:"nodeData";a:3:{i:16;i:0;i:20;s:43:"TYPO3\TYPO3CR\Domain\Model\AbstractNodeData";i:18;s:43:"TYPO3\TYPO3CR\Domain\Model\AbstractNodeData";}s:4:"crop";a:5:{i:16;i:1;i:17;b:1;i:21;b:1;i:22;b:1;i:18;s:7:"boolean";}}}}}

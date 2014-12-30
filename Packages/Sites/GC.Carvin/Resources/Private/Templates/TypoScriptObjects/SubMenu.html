@@ -1,0 +1,10 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+<f:render section="itemList" arguments="{items: items}" />
+
+<f:section name="itemList">
+<ul id="mainNav" class="nav mainNav">
+  <f:for each="{items}" as="item" iteration="menuItemIterator">
+    <li class="page-{menuItemIterator.index}"><neos:link.node node="{item.node}" class="{item.state}">{item.label}</neos:link.node></li>
+  </f:for>
+</ul>
+</f:section>

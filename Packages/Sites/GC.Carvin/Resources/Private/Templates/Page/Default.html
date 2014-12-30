@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<link rel="stylesheet" href="{f:uri.resource(path: 'css/main.css', package: 'GC.Carvin')}" media="all" />
+	</f:section>
+	<f:section name="headScripts">
+		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
+		<script src="Packages/Sites/GC.Carvin/Resources/Public/js/components/modernizr.js" type="text/javascript"></script>
+		<script src="Packages/Sites/GC.Carvin/Resources/Public/js/components/jquery/jquery.min.js" type="text/javascript"></script>
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+	{parts.siteMenu -> f:format.raw()}
+	
+	<div id="header" class="header">
+	  <div class="page">
+	   <!--Header-->
+	   <div id="logo" class="logo"><h1><a href="/"><img src="/Resources/Public/img/logo_carvin_fr.gif" width="284" height="43" alt="Carvin.fr"></a></h1></div>
+
+	   <!--mainNav-->
+	   {parts.subMenu -> f:format.raw()}
+	 </div>
+	</div>
+
+	<div class="content">
+		{content.main -> f:format.raw()}
+	</div>
+</f:section>
+<f:section name="bodyScripts">
+
+	<script src="Packages/Sites/GC.Carvin/Resources/Public/js/base.js" type="text/javascript"></script>
+	<script src="Packages/Sites/GC.Carvin/Resources/Public/js/main.js" type="text/javascript"></script>
+	<script src="Packages/Sites/GC.Carvin/Resources/Public/js/components/quickaccess.js" type="text/javascript"></script>
+	<script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.1.7.0.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
+//]]></script>
+</f:section>
+</body>
+</html>

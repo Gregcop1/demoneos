@@ -1,11 +1,3 @@
-/Build/
-/Configuration/
-/Data/
-/Packages/
-/Web/
-/bin/
-/Readme.txt
-/Upgrading.txt
-/flow
-/flow.bat
-Data/Temporary/
+_local
+Data/Logs
+Data/Temporary

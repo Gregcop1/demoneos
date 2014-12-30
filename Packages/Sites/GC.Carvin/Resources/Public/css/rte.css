@@ -1,0 +1,23 @@
+h1 { font-size:30px }
+h2 { font-size:22px }
+h3 { font-size:18px }
+h4 { font-size:16px }
+h5,h6 { font-size:15px }
+
+div.align-left,
+p.align-left { text-align: left; }
+div.align-center,
+p.align-center { text-align: center; }
+div.align-right,
+p.align-right { text-align: right; }
+div.align-justify,
+p.align-justify { text-align: justify; }
+
+div.introduction,
+p.introduction { font-size: 2em; }
+
+a.button { display: inline-block; border: 1px solid #017189; padding: 10px 30px; border-radius: 5px; transition: background-color 200ms linear, color 200ms linear; font-size: 15px; text-decoration: none; color: #017189; }
+a.pink { border-color: #d53983; background-color: #d53983; color: white; }
+a.green { border-color: #88c13c; background-color: #88c13c; color: white; }
+a.orange { border-color: #f55c41; background-color: #f55c41; color: white; }
+a.blue { border-color: #017189; background-color: #017189; color: white; }

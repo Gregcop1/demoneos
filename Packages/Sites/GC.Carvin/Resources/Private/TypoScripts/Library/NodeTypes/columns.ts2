@@ -1,0 +1,14 @@
+prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
+  # templatePath = 'resource://GC.Carvin/Private/Templates/NodeTypes/MultiColumn.html'
+  attributes.class = ${'columns '+ q(node).property('layout')+' columns-' + String.toLowerCase(String.split(q(node).property('_nodeType'), ':')[1])}
+  
+  columns.iterationName = 'multiColumnIteration'
+}
+prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
+  templatePath = 'resource://GC.Carvin/Private/Templates/NodeTypes/MultiColumnItem.html'
+  attributes.class = ${'column column-' + String.split(q(node).parent().property('layout'), '-')[multiColumnIteration.index+1]}
+}
+
+
+prototype(GC.Carvin:Slice) >
+prototype(GC.Carvin:Slice) < prototype(TYPO3.Neos.NodeTypes:MultiColumn)

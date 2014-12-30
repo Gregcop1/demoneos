@@ -1,0 +1,134 @@
+'GC.Carvin:QuickAccess':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Quick Access'
+    group: 'plugins'
+    icon: 'icon-resize-horizontal'
+    inlineEditable: false
+    inspector:
+      groups:
+        link:
+          label: 'Link'
+          position: 3
+
+  childNodes:
+    column0:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    linkAll:
+      type: string
+      ui:
+        label: 'Link'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+
+'GC.Carvin:QuickAccessItem':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'Quick Access item'
+    group: 'plugins'
+    icon: 'icon-resize-horizontal'
+    inspector:
+      groups:
+        properties:
+          label: 'Properties'
+          position: 2
+  properties:
+    headline:
+      type: string
+      defaultValue: 'Replace by your headline value ...'
+      ui:
+        label: 'Headline'
+        inspector:
+          group: 'properties'
+
+
+## Slice
+'GC.Carvin:Slice':
+  superTypes: ['TYPO3.Neos.NodeTypes:Column']
+  ui:
+    label: 'Slice'
+    reloadIfChanged: TRUE
+  childNodes:
+    column0:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    layout:
+      defaultValue: ''
+      ui:
+        reloadIfChanged: TRUE
+        inspector:
+          editorOptions:
+            values:
+              '':
+                label: ''
+              'white':
+                label: 'Blanc'
+              'orange':
+                label: 'Orange'
+              'grey':
+                label: 'Gris'
+              'purple':
+                label: 'Violet'
+              'blue':
+                label: 'Bleu'
+              'black':
+                label: 'Noir'
+
+
+##
+# Adjust the "TwoColumn" node type:
+# Disable some of the layout options, override labels and set the default layout
+#
+'TYPO3.Neos.NodeTypes:TwoColumn':
+  properties:
+    'layout':
+      defaultValue: 'column-50-50'
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '50-50' : ~
+              '75-25' : ~
+              '25-75' : ~
+              '66-33' : ~
+              '33-66' : ~
+              '6-6'   : ~
+              '8-4'   : ~
+              '4-8'   : ~
+              'column-50-50':
+                label: '50% / 50%'
+              'column-30-70':
+                label: '30% / 70%'
+              'column-70-30':
+                label: '70% / 30%'
+
+##
+# Adjust the "ThreeColumn" node type:
+# Disable some of the layout options, override labels and set the default layout
+#
+'TYPO3.Neos.NodeTypes:ThreeColumn':
+  properties:
+    'layout':
+      defaultValue: 'column-33-33-33'
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '33-33-33' : ~
+              '50-25-25' : ~
+              '25-50-25' : ~
+              '25-25-50' : ~
+              '4-4-4'    : ~
+              '6-3-3'    : ~
+              '3-6-3'    : ~
+              '3-3-6'    : ~
+              'column-33-33-33':
+                label: '33% / 33% /33%'
+              'column-50-25-25':
+                label: '50% / 25% /25%'
+              'column-25-50-25':
+                label: '25% / 50% /25%'
+              'column-25-25-50':
+                label: '25% / 25% /50%'

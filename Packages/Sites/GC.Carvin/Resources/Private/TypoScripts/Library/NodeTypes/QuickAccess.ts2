@@ -1,0 +1,12 @@
+prototype(GC.Carvin:QuickAccessItem) < prototype(TYPO3.Neos:Content) {
+  templatePath = 'resource://GC.Carvin/Private/Templates/NodeTypes/QuickAccessItem.html'
+  headline = ${q(node).property('headline')}
+}
+
+prototype(GC.Carvin:QuickAccess) < prototype(TYPO3.Neos:Content) {
+  templatePath = 'resource://GC.Carvin/Private/Templates/NodeTypes/QuickAccess.html'
+  attributes.class = slider
+  quickAccessItems = TYPO3.Neos:ContentCollection {
+    nodePath = 'column0'
+  }
+}

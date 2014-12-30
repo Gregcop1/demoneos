@@ -1,0 +1,5 @@
+# ----------------------------------------
+# Override the Neos Content Collection
+# To remove the default wrap in frontend
+# ----------------------------------------
+prototype(TYPO3.Neos:ContentCollection).@class = 'GC\\Carvin\\TypoScript\\ContentCollectionImplementation'
